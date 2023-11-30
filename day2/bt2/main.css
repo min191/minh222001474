@@ -1,0 +1,22 @@
+body {
+    background: #fff;
+    font-family: Arial;
+    font-size: 12px;
+    margin: 0px;
+}
+.header{
+    background: black;
+    height: 80px;
+    width: 100%
+    
+}
+#logo{
+    width: 150px;
+    margin: 15px;
+}
+li
+{
+    list-style: none;
+    padding: 2em;
+}
+
