@@ -18,24 +18,3 @@ h3{
 li:hover{
     color: rgb(228,228,19);
 }
-.mau{
-    width: 560px;
-    height: 430px;
-    background-color: rgb(194,186,186);
-    color: rgb(66,68,189);
-    text-align: center;
-}
-img{
-    width: 85%;
-    margin-top: 5px;
-}
-p{
-    text-align: justify;
-    font-size: 12pt;
-}
-p.right{
-    text-align: right;
-}
-.y{
-    font-size: 11pt;
-}
