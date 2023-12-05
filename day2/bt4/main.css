@@ -1,0 +1,41 @@
+body{
+    font-family: 'Roboto Slab', serif;
+}
+#main{
+    width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    color: rgb(19, 151, 151);
+    font-size: 16.8pt;
+}
+h3{
+    background-color: rgb(228,228,19);
+    color: #ffffff;
+    font-size: 13pt;
+}
+li:hover{
+    color: rgb(228,228,19);
+}
+.mau{
+    width: 560px;
+    height: 430px;
+    background-color: rgb(194,186,186);
+    color: rgb(66,68,189);
+    text-align: center;
+}
+img{
+    width: 85%;
+    margin-top: 5px;
+}
+p{
+    text-align: justify;
+    font-size: 12pt;
+}
+p.right{
+    text-align: right;
+}
+.y{
+    font-size: 11pt;
+}
