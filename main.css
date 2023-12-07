@@ -38,7 +38,7 @@ body {
     align-items: center; 
     padding: 10px;
 }
-#top h1, #top p, #menulist {
+#top h1, #top p, .menulist {
     margin: 2px;
     padding: 2px;
 }
