@@ -24,6 +24,7 @@ body {
 }
 
 #menubar {
+    display: flex;
     width: 200px;
     float: left
 }
