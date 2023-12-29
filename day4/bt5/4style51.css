@@ -1,0 +1,354 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI","Helvetica Neue",sans-serif;
+    font-size: 15px;
+    line-height: 1.33333333;
+    color: #333;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.wrapper:after {
+    clear: both;
+}
+.wrapper{
+    min-height: calc(100vh - 48px);
+    padding-bottom: 0;
+    z-index: 300;
+    margin: 24px;
+    background: #f2f2f2;
+    position: relative;
+}
+.wrapper:before, .wrapper:after,
+.hader4:before, .header4:after,
+.social1:before, .social1:after,
+.bd3:before, .bd3:after,
+.bd4:before, .bd4:after,
+.bd6:before, .bd6:after{
+    content: " ";
+    display: table;
+}
+header{
+    display: block;
+}
+.header1{
+    position: fixed;
+    top: 24px;
+    left: 0;
+    right: 0;
+    user-select: none;
+    z-index: 100000;
+}
+.header2{
+    opacity: 1;
+    background-color: rgba(26,26,26,.9);
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 300;
+    display: flex;
+    flex-direction: column;
+    transition: all 350ms ease-in-out;
+    transition-delay: 200ms;
+    display: none;
+}
+.bars{
+    border: none;
+    cursor: pointer;
+    font-size: 35px;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -95px;
+    margin-left: -162px;
+}
+.bars:focus + .header2{
+    display: block;
+    height: 100%;
+}
+.header3{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-grow: 1;
+    overflow: auto;
+}
+.header4{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1170px;
+}
+.header5{
+    display: inline-block;
+    text-align: center;
+    margin: 60px 0 40px;
+    padding: 0;
+}
+.header6{
+    padding: 0;
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 9.5px;
+}
+.header7{
+    margin-top: 10px;
+}
+.header8, .header9{
+    color: #fff;
+    font-size: 32px;
+    position: relative;
+    display: inline-block;
+}
+.header8:after{
+    content: "";
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    display: block;
+    background-color: #fff;
+    transition: all 300ms cubic-bezier(.175,.885,.32,1.075);
+    height: 2px;
+    bottom: 0;
+    width: 100%;
+}
+.header9:after{
+    content: "";
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    display: block;
+    background-color: #fff;
+    transition: all 300ms cubic-bezier(.175,.885,.32,1.075);
+    height: 2px;
+    bottom: 0;
+    width: 0;
+}
+.header9:hover:after{
+    width: 100%;
+}
+.search-form{
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+    width: 100%;
+}
+.search-field{
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    font-size: 32px;
+    width: 100%;
+
+}
+input[type=search] {
+    box-sizing: border-box;
+    appearance: none;
+}
+:focus {
+    outline: 0;
+    box-shadow: none;
+}
+input{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+}
+label{
+    color:#fff;
+    font-size: 32px;
+    font-weight: 400;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+label i{
+    display: inline-block;
+    background-color: #fff;
+    width: 3px;
+    height: 3px;
+    animation: blink 1s linear infinite;
+    margin-left: 3px;
+}
+.social{
+    margin: 24px;
+}
+.social1{
+    border-top: 1px solid rgba(255,255,255,.2);
+    padding: 30px 0;
+    width: 1370px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media screen and (max-width:780px) {
+.social1{
+    width: 500px;
+    border-top: 1px solid rgba(255,255,255,.2);
+    padding: 30px 0;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+.social2{
+    float: left;
+    text-align: left;
+    margin-left: -70px;
+    margin-bottom: 20px;
+}}
+.social2{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+.social3{
+    margin-bottom: 0;
+    line-height: 0;
+    position: relative;
+    list-style: none;
+    padding-left: 0;
+    margin-left: -5px;
+    margin-top: 0;
+}
+.social3 li{
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.social3 a{
+    margin: 0;
+    display: inline-block;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    transition: all 250ms cubic-bezier(.445,.05,.55,.95);
+}
+.social3 a:hover{
+    background-color: #d5d5d5;
+}
+.social3 i{
+    color: #333;
+    font-size: 12px;
+    line-height: 24px;
+    display: block;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.social4{
+    width: 50%;
+    float: left;
+    text-align: left;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+.social4 a{
+    color: #fff;
+}
+.social4 a:hover{
+    opacity: .55;
+}
+.bar2{
+    position: relative;
+    width: 23px;
+    height: 18px;
+}
+.fa-times{
+    font-size: 40px;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    margin-left: 540px;
+    margin-top: -33px;
+    cursor: pointer;
+}
+.bd1{
+    margin-top: 100px;
+    margin-bottom: 0;
+    position: relative;
+}
+.bd2{
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: unset;
+    display: block;
+}
+.bd3{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (min-width: 792px){
+.bd3{
+    width: 1170px;
+}}
+.bd4{
+    width: auto;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.bd5{
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    box-sizing: border-box;
+}
+.bd6{
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.bd7{
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+.bd8{
+    line-height: 90px;
+    font-size: 60px;
+    margin-bottom: 35px;
+}
+@media screen and (max-width:600px) {
+    .bd8{
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+.bd81{
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 5px 10px;
+}
+.bd82{
+    display: inline-block;
+}
