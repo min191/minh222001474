@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <head>
+        <title>Image Display</title>
+        <script type="text/javascript">
+            function show(anh) {
+                if (anh == "c3") {
+                    document.getElementById("image-container").innerHTML = "img src='./a7.jpg'";
+                } else if (anh == "dh") {
+                    document.getElementById("image-container").innerHTML = "<img src='./CNTT D2022.jpg'>";
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <p>Hãy chọn đồ vật mà bạn thích:</p>
+        <input type="button" value="c3" onclick="show('c3');" />
+        <input type="button" value="dh" onclick="show('dh');" />
+    
+        <div id="image-container"></div>
+    </body>
+</body>
+
+</html>

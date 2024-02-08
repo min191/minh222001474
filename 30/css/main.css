@@ -1,0 +1,595 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header {
+
+    background-color: white;
+    top: 0px;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 2px 92px #00000012;
+
+}
+
+.header-nav {
+    justify-content: space-evenly;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.header-nav li {
+    color: #000000;
+    margin: 0 8px;
+    font-size: 15px;
+}
+
+.header-nav li:hover {
+    color: #ffb100;
+    cursor: pointer;
+}
+
+.content-profile {
+    width: 100%;
+    min-height: 300px;
+    margin-top: 30px;
+    padding: 1%;
+    background-color: rgb(247, 247, 247);
+    /* border-radius: 8px; */
+    box-shadow: 0 2px 92px #00000012;
+}
+
+.home-icon {
+    background-color: #00ff7b;
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-left: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black !important;
+    font-size: 16px !important;
+}
+
+.navigation-card {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 25px;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 40px;
+    overflow: hidden;
+    /* background-color: rgb(252, 252, 252); */
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 12px;
+}
+
+.tab:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+.icon{
+    display: flex;
+    width: 15px;
+    margin: 10px;
+    gap: 10px;
+}
+.icon-1:hover{
+    transform: scale(1.3);
+}
+
+.content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container_banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container_banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    color: white;
+}
+
+.banner-content h2 {
+    font-size: 40px;
+}
+
+.banner-content h1 {
+    font-size: 70px;
+}
+
+.banner-content h3 {
+    font-size: 50px;
+}
+
+.additional-text {
+    position: absolute;
+    bottom: 10%;
+    left: 2%;
+    text-align: start;
+    color: white;
+}
+
+.additional-text p {
+    font-size: 20px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+/* begin shop */
+.shop-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.shop-container h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.shop-container p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    gap: 20px;
+}
+
+.grid-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.grid div>div {
+    margin-top: 10px;
+    color: #555;
+}
+
+.box-shop {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.text-shop {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: #007a04;
+}
+
+/* begin banner9 */
+.banner9 {
+    position: relative;
+}
+
+.banner9 img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.text-banner9 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: end;
+    color: white;
+}
+
+.text-banner9 p {
+    font-size: 80px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.selling-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+}
+
+.selling-box img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.content-selling {
+    margin: 20px;
+    margin-top: 30px;
+}
+
+.content-selling h3 {
+    font-size: 35px;
+    color: #333;
+    margin: 0;
+}
+
+.content-selling h1 {
+    font-size: 80px;
+    color: #125c00;
+    margin: 10px 0;
+}
+
+.text-selling {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    font-size: 35px;
+}
+
+.text-selling p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.text-selling button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.text-selling button:hover {
+    background-color: #45a049;
+}
+
+.banner5 {
+    position: relative;
+}
+
+.image-banner5 img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.text-banner5 {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    color: rgb(50, 50, 50);
+    line-height: 120%;
+}
+
+.text-banner5 h1 {
+    font-size: 80px;
+    line-height: 1.2;
+
+}
+
+
+.text-banner5 h1:hover{
+    color: rgb(255, 255, 255);
+}
+.text-banner5 p {
+
+    font-size: 40px;
+    line-height: 1.5;
+
+}
+/* banner7 */
+.banner7 {
+    position: relative;
+}
+
+.image-banner7 img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.text-banner7 {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    text-align: end;
+    color: white;
+}
+
+.text-banner7 h1 {
+    font-size: 80px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.text-banner7 h3 {
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.text-banner7 p {
+    font-size: 37px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* banner 2 */
+.banner2 {
+    display: flex;
+    max-height: 100%;
+    /* Set the maximum height to the viewport height */
+}
+
+.image-banner2 {
+    position: relative;
+    width: 100%;
+    /* Adjust the width as needed */
+    overflow: hidden;
+    /* Hide overflow content */
+}
+
+.image-banner2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image covers the entire container */
+}
+
+.plant-info {
+    position: absolute;
+    /* top: 99%;
+    left: 20%; */
+    z-index: 100;
+    transform: translate(-320%, -50%);
+    text-align: start;
+    color: rgb(0, 0, 0);
+}
+
+.plant-info h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.plant-info h2 {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.text-banner2 {
+    display: flex;
+    
+    height: 100%;
+    justify-content: end;
+    padding: 20px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+/* banner3 */
+.container-banner3 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.container-content-banner3 {
+    position: relative;
+}
+
+.gray,
+.white {
+    width: 100%;
+    height: 400px;
+}
+
+.gray {
+    background-color: #f2f2f2;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.image-3 {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+.hop1 {
+    width: 302px;
+    height: 462px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 15%;
+}
+
+.hop1 h1 {
+    width: 200px;
+    font-size: 50px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.line-banner3 {
+    width: 200px;
+    height: 2px;
+    margin: auto;
+    background-color: black;
+}
+
+.Agave {
+    width: 200px;
+    margin: auto;
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.hop-sun,
+.hop-droplet,
+.hop-time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    margin-top: 15px;
+    margin-left: 15%;
+    margin-right: 51px;
+}
+
+.hop-sun p,
+.hop-droplet p,
+.hop-time p {
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.hop-sun p::after,
+.hop-droplet p::after,
+.hop-time p::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.hop-sun p:hover::after,
+.hop-droplet p:hover::after,
+.hop-time p:hover::after {
+    transform: scaleX(1);
+}
+
+.hop-time {
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.hop-down {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    position: absolute;
+    bottom: 8%;
+    right: 20%;
+    top: 95%;
+}
+
+.img-square {
+    width: 20px;
+    height: 20px;
+}
+
+.care-tips {
+    display: flex;
+    justify-content: space-between;
+}
+
+.care-tip {
+    flex: 1;
+    width: 120px;
+    text-align: center;
+    padding: 20px;
+}
+
+.care-tip img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.care-tip h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.care-tip p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+}
+/* banner6 */
+.banner6{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.text-banner6{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 30px;
+    transform: translate(0, -50%);
+}

@@ -1,0 +1,262 @@
+.title h3{
+    font-size: 160%;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+    
+}
+.title{
+    
+    margin: 0 20px;
+}
+#animation_text{
+    padding-top: 8%;
+}
+
+.section-title {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: relative !important;
+    margin-top: 50px;
+    height: 550px;
+    background:#7c7c7c2b;
+  }
+  .section-title .title-big {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 900 !important;
+    line-height: 1.2;
+    font-size: calc(2.125rem + 10.5vw);
+    text-transform: uppercase !important;
+    color: #000000f7 !important;
+    /* padding-top: 150px; */
+  }
+  
+  .section-title .title-small {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    font-size: calc(1.375rem + 1.5vw);
+    font-weight: 900 !important;
+    position: absolute !important;
+    text-transform: uppercase !important;
+    color: #ffd059 !important;
+    /* padding-top: 150px; */
+  }
+  
+.about{
+    list-style-type: none;
+    /* padding-left: 20px; */
+    padding: 40px;
+
+}
+.about-container{
+    padding: 20px;
+    
+}
+.about li{
+    list-style-type: none;
+    border-left: 2px solid #787878;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 13px;
+    position: relative;
+}
+.about li:before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border-color: #ffb100;
+    border-width: 2px;
+    border-style: solid;
+    position: absolute;
+    left: -5px;
+    top: 0;
+    background-color: white;
+    box-sizing: border-box;
+}
+.about li:first-child:before{
+    display: none;   
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    background-color: #ffbd22;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-size: 30px auto;
+    margin-left: -40px;
+    margin-top: -40px;
+    box-shadow: 0 2px 32px #047bf84d;
+}
+.about-container{
+    padding: 20px;
+    display: flex;
+    
+}
+.about-content{
+    width: 50%;
+    padding: 20px;
+}
+.icon h2{
+    display: flex;
+}
+
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    margin-top: 8%;
+    margin-bottom: 1%;
+
+}
+.container-about {
+    margin: auto;
+    max-width: 1100px;
+    padding: 0 20px;    
+    /* overflow: auto; */
+}
+.text-primary {
+    color: #ffb100;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    font-size: 18px;
+    background:#333 ;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #f7c08a;
+    color: #fff;
+}
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+    
+}
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+.bg-primary {
+    background: #f7c0f7;
+    color: #333;
+}
+
+.clr {
+    clear: both;
+}
+
+.l-heading {
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.py-1 { padding: 10px 0; }
+.py-2 { padding: 20px 0; }
+.py-3 { padding: 30px 0; }
+        /* ---------Common Classes ----------*/
+a {
+    text-decoration: none;
+}
+
+
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-left {
+    float: left;
+    width: 50%;
+}
+
+#about-info .info-right img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 50%;
+}
+
+.testimonial {
+    display: flex;
+    padding: 20px;
+    border-radius: 5px;
+    opacity: 0.9;
+    background-color: #fff;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+   
+}
+
+.carousel-container {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+} 
+@media screen and (max-width: 415px){
+    .courser-wrapper{
+        width: 100%;
+    }
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.control-button {
+    z-index: 1;
+    cursor: pointer;
+    background: #007bff00;
+    color: #ffffff00;
+    border: none;
+    font-size: 16px;
+}
+
+.carousel-item img {
+    width: 100px;
+    border-radius:100%;
+    margin-bottom: 10px;
+}
+
+.carousel-item p {
+    margin: 10px;
+    margin-top:  3%;
+    text-align: center;
+}

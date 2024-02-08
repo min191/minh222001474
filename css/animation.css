@@ -1,0 +1,183 @@
+/* led-run */
+
+#line_title {
+    height: 4px;
+    width: 108px;
+    background: linear-gradient(#f3b511 5%, #fadc8f 90.81%);
+    margin: 10px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+#line_title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 80px;
+    background: linear-gradient(#c5c5c5 0%, #000000 90.81%);
+
+    /* background: white; */
+    /* background: transparent; */
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: MOVE-BG;
+}
+
+@keyframes MOVE-BG {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+        width: 5px;
+    }
+}
+
+/* text-run */
+/* 
+#item1 h1,
+#item1 p {
+  animation: fadeInUp 1s ease-out;
+}
+
+#item1 h1 span {
+  animation: slideInLeft 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+} */
+
+/* CSS animation for the 'Hello' section */
+
+#animation_text h1,
+#animation_text p {
+  animation: fadeInUp 1s ease-out;
+}
+
+#animation_text h1 span {
+  animation: slideInLeft 1s ease-out;
+}
+
+#animation_img {
+  animation: slideInRight 1s ease-out;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* CSS animation for the 'Images' section */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes carousel {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes progressBarAnimationJV {
+  0% {
+      width: 8%;
+  }
+  50% {
+      width: 10%;
+  }
+  100% {
+      width: 8%;
+  }
+}
+@keyframes progressBarAnimationHTML {
+  0% {
+      width: 65%;
+  }
+  50% {
+      width: 70%;
+  }
+  100% {
+      width: 65%;
+  }
+}
+@keyframes progressBarAnimationC {
+  0% {
+      width: 85%;
+  }
+  50% {
+      width: 90%;
+  }
+  100% {
+      width: 85%;
+  }
+}
+@keyframes progressBarAnimationJS {
+  0% {
+      width: 55%;
+  }
+  50% {
+      width: 60%;
+  }
+  100% {
+      width: 55%;
+  }
+}
+
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+}

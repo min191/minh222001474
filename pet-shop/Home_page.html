@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomePage</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="Home_Page.css">
+  <!-- <link rel="stylesheet" href="all.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ziggy" rel="stylesheet">
+
+</head>
+
+<body>
+  <!--Begin Header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!--Container-fluid: container mở rộng ra phủ đầy toàn bộ chiều rộng của màn hình-->
+    <div class="container-fluid px-5">
+
+      <!--margin-y: margin-top & margin-bottom-->
+      <div class="ms-2 my-4">
+        <img src="./image/logo.svg" alt="logo">
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse ms-5 ps-4" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item ms-4 home">
+            <a class="nav-link active text-dark fw-bold" href="./Home_page.html">Home</a>
+          </li>
+
+          <li class="nav-item ms-4 home">
+            <a class="nav-link active text-dark fw-bold" href="./Product.html">Shop</a>
+          </li>
+
+          <li class="nav-item ms-4 home">
+            <a class="nav-link active text-dark fw-bold" href="./About_Us.html">About Us</a>
+          </li>
+
+          <li class="nav-item blog ms-4 home">
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle text-dark fw-bold" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Blog
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Healthy Food</a></li>
+                <li><a class="dropdown-item" href="#">Educational</a></li>
+                <li><a class="dropdown-item" href="#">Lifestyles</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item ms-4 home">
+            <a class="nav-link active text-dark fw-bold" href="./Contact_us.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <!--Search button-->
+        <div>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+        </div>
+
+        <!--Icon-->
+        <div class="d-flex mt-2">
+          <div class="ms-3 user">
+            <a href="./LogIn.html">
+              <i class="fa-solid fa-user fs-5 text-dark"></i>
+            </a>
+            <div class="account-dropdown"></div>
+          </div>
+          <div class="ms-3 heart">
+            <a href="./Wishlist.html">
+              <i class="fa-solid fa-heart fs-5 text-dark"></i>
+            </a>
+          </div>
+
+          <div class="ms-3 shopping position-relative">
+            <a href="./Cart.html">
+              <i type="button" class="fa-solid fa-cart-shopping fs-5 text-dark position-relative">
+                <span
+                  class="position-absolute top-0 start-100 ms-2 translate-middle badge rounded-pill bg-danger fs-6">0<span
+                    class="visually-hidden">product</span></span>
+              </i>
+            </a>
+          </div>
+
+        </div>
+        <!--End icon-->
+      </div>
+  </nav>
+  <!--End header-->
+
+
+  <!-- begin banner -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active position-relative">
+        <img src="./image/banner1.png" class="d-block w-100" alt="...">
+
+        <div class="position-absolute top-50 start-0 text-start translate-middle-y">
+          <div class="fw-bold text-danger ms-5 mb-2">FAST & FREE SHIPPING</div>
+          <h1 class="fw-bold fs-1 ms-5">Indestructible<br />Dog Toys</h1>
+          <h2 class="fw-bold fs-6 ms-5 mt-3">Good for aggressive chewers!</h2>
+          <button type="button" class="btn btn-success ms-5 mt-5 rounded-pill">Shop Now</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./image/banner2.png" class="d-block w-100" alt="...">
+        <div class="position-absolute top-50 start-0 text-start translate-middle-y">
+
+          <h1 class="fw-bold fs-1 ms-5">Felt Cat Beds<br />For Indoor Cats</h1>
+          <h3 class="fw-bold fs-6 ms-5 mt-1">Limited time offer</h3>
+          <div class="fs-1 fw-bold ms-5 text-danger">$69.99</div>
+          <button type="button" class="btn btn-primary ms-5 mt-5 rounded-pill">Shop Now</button>
+        </div>
+
+      </div>
+      <div class="carousel-item">
+        <img src="./image/banner3.png" class="d-block w-100" alt="...">
+        <div class="position-absolute top-50 start-0 text-start translate-middle-y d-none d-md-block">
+          <div class="fw-bold text-danger ms-5 mb-2">GET 10% DISCOUNT</div>
+          <h1 class="fw-bold fs-1 ms-5">Best Food For<br />Your Dog</h1>
+          <h3 class="fw-normal fs-4 ms-5 ">Help your dog maintain a healthier weight<br />with.</h3>
+          <button type="button" class="btn btn-info ms-5 mt-5 rounded-pill">Shop Now</button>
+        </div>
+
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- end banner -->
+
+  <!-- Begin Category-->
+  <div class="bg-gray-d mt-5 pb-5">
+    <div>
+      <div class="text-uppercase text-center fs-2 fw-bold py-4">Category</div>
+    </div>
+
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-lg-4 px-4">
+          <div class="card bg-dark text-white zoom">
+            <img src="./image/banner/banner1.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay ms-4">
+              <div class="card-text fs-1 fw-bold text-primary">50% Off</div>
+              <h5 class="card-title fs-2 fw-bold">Pet Food &<br /> Accessories</h5>
+              <p class="card-text fw-bold fs-6 mt-5"> Everything for your pet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 px-4">
+          <div class="card bg-dark text-white zoom">
+            <img src="./image/banner/banner2.jpg" class="card-img" alt="...">
+            <!--card-img-overlay: lớp để ghi văn bản-->
+            <div class="card-img-overlay ms-4">
+              <h5 class="card-text fw-bold fs-6 text-uppercase mt-4">Free Shipping</h5>
+              <h5 class="fw-bold fs-1 card-text">30 %</h5>
+              <h5 class="fw-bold fs-2 card-title text-uppercase">Sale off</h5>
+              <a href="./Product.html">
+                <button type="button" class="btn btn-warning mt-5 rounded-pill fw-bold text-white">Shop Now</button>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 px-4">
+          <div class="card bg-dark text-white zoom">
+            <img src="./image/banner/banner3.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay ms-4">
+              <h5 class="card-title fs-1 fw-bold">Parrot Food</h5>
+              <h5 class=" card-text fst-italic fw-light text-dark ms-5 ps-5 fs-3">Healthy Formula</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card bg-dark text-white zoom">
+            <img src="./image/banner/banner4.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay ms-4 mt-4">
+              <h5 class="card-title fw-bold fs-4">Dog Supplies</h5>
+              <h5 class="card-text fw-bold fs-1">25 %<br />Off</h5>
+              <h5 class="card-text fs-6 fw-bold text-secondary mt-3">Hotline Order</h5>
+              <p class="card-text fw-bold fs-4">(877)834-1434</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-6">
+          <div class="card bg-dark text-white zoom">
+            <img src="./image/banner/banner6.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay mt-4 ms-4">
+              <h5 class="text-uppercase fw-bold fs-6">Gift for pet</h5>
+              <h5 class="card-title fw-bold fs-1">Premium<br />Cat Food</h5>
+              <div class="card-text d-flex">
+                <p class=" fw-bold fs-3 me-2">Save </p>
+                <p class="fw-bold text-warning fs-3"> 30%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end category-->
+
+  <!-- best seller product -->
+  <div class="bg-gray-d mt-5 pb-5">
+    <div>
+      <div class="text-uppercase text-center fs-2 fw-bold py-4">Best Seller Products</div>
+    </div>
+
+    <!--Row 1-->
+    <div class="container-fluid">
+      <!--justify-content-around: các phần tử con cách đều nhau-->
+      <div class="row d-flex justify-content-around mt-3 ms-1">
+
+        <div class="col-lg-2">
+          <div class="card border-secondary bg-dark text-white product1 ">
+            <img src="./image/product/product1.jpg" class="card-img" alt="...">
+
+            <div class="product-caption-bottom">
+              <a href="./Product.html" class="mt-5 pt-5 text-decoration-none">
+                <button type="button" class="fs-6 mt-auto mb-3 btn btn-primary">View detail</button>
+              </a>
+            </div>
+
+          </div>
+          <div>
+            <h5 class="fs-6 fw-bold mt-3 text-orange">$305.49</h5>
+            <h5 class="fs-6 fw-normal">Fantastic Plastic Clock</h5>
+
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="card bg-dark text-white product1">
+            <img src="./image/product/product2.jpg" class="card-img" alt="...">
+            <div class="product-caption-bottom">
+              <a href="./Product.html" class="mt-5 pt-5 text-decoration-none">
+                <button type="button" class="fs-6 mt-auto mb-3 btn btn-primary">View detail</button>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h5 class="fs-6 fw-bold mt-3 text-orange">$66.17</h5>
+            <h5 class="fs-6 fw-normal">Fantastic Marble Shoes</h5>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="card bg-dark text-white product1">
+            <img src="./image/product/product3.jpg" class="card-img" alt="...">
+            <div class="product-caption-bottom">
+              <a href="./Product.html" class="mt-5 pt-5 text-decoration-none">
+                <button type="button" class="fs-6 mt-auto mb-3 btn btn-primary">View detail</button>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h5 class="fs-6 fw-bold mt-3 text-orange">$899.41 </h5>
+            <h5 class="fs-6 fw-normal">Rustic Marble Car</h5>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="card bg-dark text-white product1">
+            <img src="./image/product/product4.jpg" class="card-img" alt="...">
+            <div class="product-caption-bottom">
+              <a href="./Product.html" class="mt-5 pt-5 text-decoration-none">
+                <button type="button" class="fs-6 mt-auto mb-3 btn btn-primary">View detail</button>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h5 class="fs-6 fw-bold mt-3 text-orange">$262.45 </h5>
+            <h5 class="fs-6 fw-normal">Small Bronze Chair</h5>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="card bg-dark text-white product1">
+            <img src="./image/product/product5.jpg" class="card-img" alt="...">
+            <div class="product-caption-bottom">
+              <a href="./Product.html" class="mt-5 pt-5 text-decoration-none">
+                <button type="button" class="fs-6 mt-auto mb-3 btn btn-primary">View detail</button>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h5 class="fs-6 fw-bold mt-3 text-orange"> $60.40–$98.32</h5>
+            <h5 class="fs-6 fw-normal">Lightweight Aluminum Clock</h5>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--End Row 1-->
+
+    <!--Row 2-->
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-around mt-3 ms-1">
+        <div class="col-lg-2">
+          <div class="card bg-dark text-white product1">
+            <img src="./image/product/product6.jpg" class="card-img" alt="...">
+            <div class="product-caption-bottom">
+              <a href="./Product.html" class="mt-5 pt-5 text-decoration-none">
+                <button type="button" class="fs-6 mt-auto mb-3 btn btn-primary">View detail</button>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h5 class="fs-6 fw-bold mt-3 text-orange">$426.03</h5>
+            <h5 class="fs-6 fw-normal">Intelligent Wooden Shirt</h5>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="card bg-dark text-white product1">
+            <img src="./image/product/product7.jpg" class="card-img" alt="...">
+            <div class="product-caption-bottom">
+              <a href="./Product.html" class="mt-5 pt-5 text-decoration-none">
+                <button type="button" class="fs-6 mt-auto mb-3 btn btn-primary">View detail</button>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h5 class="fs-6 fw-bold mt-3 text-orange">$853.93</h5>
+            <h5 class="fs-6 fw-normal">Ergonomic Paper Clock</h5>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="card bg-dark text-white product1">
+            <img src="./image/product/product8.jpg" class="card-img" alt="...">
+            <div class="product-caption-bottom">
+              <a href="./Product.html" class="mt-5 pt-5 text-decoration-none">
+                <button type="button" class="fs-6 mt-auto mb-3 btn btn-primary">View detail</button>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h5 class="fs-6 fw-bold mt-3 text-orange">$786.43</h5>
+            <h5 class="fs-6 fw-normal">Aerodynamic Bronze Watch</h5>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="card bg-dark text-white product1">
+            <img src="./image/product/product9.jpg" class="card-img" alt="...">
+            <div class="product-caption-bottom">
+              <a href="./Product.html" class="mt-5 pt-5 text-decoration-none">
+                <button type="button" class="fs-6 mt-auto mb-3 btn btn-primary">View detail</button>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h5 class="fs-6 fw-bold mt-3 text-orange">$857.64</h5>
+            <h5 class="fs-6 fw-normal">Practical Linen Knife</h5>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="card bg-dark text-white product1">
+            <img src="./image/product/product10.jpg" class="card-img" alt="...">
+            <div class="product-caption-bottom">
+              <a href="./Product.html" class="mt-5 pt-5 text-decoration-none">
+                <button type="button" class="fs-6 mt-auto mb-3 btn btn-primary">View detail</button>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h5 class="fs-6 fw-bold mt-3 text-orange">$983.99</h5>
+            <h5 class="fs-6 fw-normal">Mediocre Marble Bench</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Row 2-->
+
+  </div>
+
+
+  <!--Lastest Blogs-->
+  <div class="bg-gray-d mt-5 pb-5">
+    <div>
+      <div class="text-uppercase text-center fs-2 fw-bold py-4 ">Lastest Blogs</div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mx-5 mb-3">
+      <div class="col">
+        <div class="card h-100">
+          <img src="./image/lastest1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">How to Choose the Right Bully Stick for Your Dog</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./image/lastest2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Saving Lives: Animal House Shelter And Downtown Pet Supply</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./image/lastest3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Himalayan Yak Chews: 11 Benefits You Need To Know</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Lastest Blogs-->
+
+
+  <!-- begin footer -->
+  <footer class="py-3 mt-5 bg-light">
+    <div class="container py-5">
+      <div class="row">
+        <!--Block 1-->
+        <div class="col-lg-3 mb-3">
+          <div class="mb-3">
+            <img src="https://demo2.themelexus.com/ziggy/wp-content/uploads/2022/05/logo.svg" alt="logo">
+          </div>
+          <div class="fs-6 fw-normal text-secondary my-3">
+            We know pets are like family, so we are committed to providing the highest-quality products that you can
+            trust.</div>
+          <div class="d-flex">
+            <div><i class="fa-solid fa-phone fs-4"></i></div>
+            <div class="ms-2 fs-6 fw-bold">Hotline Order</div>
+          </div>
+          <div class="text-danger fw-bold fs-5">(877)834 1434</div>
+          <div class="d-flex me-3 my-4">
+            <i class="me-5 fs-4 fa-brands fa-facebook"></i>
+            <i class="me-5 fs-4 fa-brands fa-instagram"></i>
+            <i class="me-5 fs-4 fa-brands fa-twitter"></i>
+            <i class="me-5 fs-4 fa-brands fa-pinterest"></i>
+          </div>
+        </div>
+        <!--Block 2-->
+        <div class=" col-6 col-lg-2 mb-3">
+          <div class="mb-4">
+            <h2 class="text-uppercase fw-bold fs-6">useful links</h2>
+          </div>
+          <div>
+            <ul class="list-unstyled">
+              <li class="mb-2 home">
+                <a class="text-secondary" style="text-decoration: none;" href="">New Products</a>
+              </li>
+              <li class="mb-2 home">
+                <a class="text-secondary" style="text-decoration: none;" href="">Best Sellers</a>
+              </li>
+              <li class="mb-2 home">
+                <a class="text-secondary" style="text-decoration: none;" href="">Bundle & Save</a>
+              </li>
+              <li class="mb-2 home">
+                <a class="text-secondary" style="text-decoration: none;" href="">Online Gift Card</a>
+              </li>
+              <li class="mb-2 home">
+                <a class="text-secondary" style="text-decoration: none;" href="">Discount</a>
+              </li>
+              <li class="mb-2 home">
+                <a class="text-secondary" style="text-decoration: none;" href="">Pet Store Locator</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <!--Block 3-->
+        <div class="col-6 col-lg-2 mb-3">
+          <div class="mb-4">
+            <h2 class="text-uppercase fw-bold fs-6">my account</h2>
+          </div>
+          <div>
+            <ul class="list-unstyled">
+              <li class="mb-2 home">
+                <a class="text-secondary" style="text-decoration: none;" href="">My Profile</a>
+              </li>
+              <li class="mb-2 home">
+                <a class="text-secondary" style="text-decoration: none;" href="">My Order History</a>
+              </li>
+              <li class="mb-2 home">
+                <a class="text-secondary" style="text-decoration: none;" href="">My Wish List</a>
+              </li>
+              <li class="mb-2 home">
+                <a class="text-secondary" style="text-decoration: none;" href="">Order Tracking</a>
+              </li>
+              <li class="mb-2 home">
+                <a class="text-secondary" style="text-decoration: none;" href="">Shipping Info</a>
+              </li>
+              <li class="mb-2 home">
+                <a class="text-secondary" style="text-decoration: none;" href="">Shopping Cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Block 4-->
+        <div class="col-6 col-lg-2 mb-3">
+          <div class="mb-4">
+            <h2 class="text-uppercase fw-bold fs-6">company</h2>
+          </div>
+          <div>
+            <ul class="list-unstyled">
+              <li class="mb-2 home ">
+                <a class="text-secondary" style="text-decoration: none;" href="">About us</a>
+              </li>
+              <li class="mb-2 home">
+                <a class="text-secondary" style="text-decoration: none;" href="">Careers</a>
+              </li>
+              <li class="mb-2 home">
+                <a class="text-secondary" style="text-decoration: none;" href="">Blog</a>
+              </li>
+              <li class="mb-2 home">
+                <a class="text-secondary" style="text-decoration: none;" href="">Affiliate</a>
+              </li>
+              <li class="mb-2 home">
+                <a class="text-secondary" style="text-decoration: none;" href="">Contact Us</a>
+              </li>
+              <li class="mb-2 home">
+                <a class="text-secondary" style="text-decoration: none;" href="">Gift Cards</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Block 5-->
+        <div class="col-lg-3 mb-3">
+          <div class="mb-4">
+            <h2 class="text-uppercase fw-bold fs-6">newsletter</h2>
+          </div>
+          <div class="fs-6 fw-normal text-secondary my-3">
+            Subscrible & get 10% discount. Get E-mail updates about our latest shop and special offers.
+          </div>
+
+          <div>
+            <div>
+              <form class="d-flex">
+                <input class="form-control me-2" type="email" placeholder="Enter your email" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit"><i class="fa-solid fa-envelope"></i></button>
+              </form>
+            </div>
+          </div>
+
+          <div class="d-fex mt-3">
+            <span>
+              <i class="fa-solid fa-mobile-screen-button fs-3 me-2"></i>
+            </span>
+            <span class="fw-bold fs-6">Download Our App</span>
+          </div>
+
+          <div class="d-flex mt-4">
+            <div>
+              <img class="me-2" src="./image/footer/App-Store.jpg">
+            </div>
+            <div>
+              <img src="./image/footer/Google-Play.jpg">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- end footer -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script>
+    let carts = [
+      {
+        id: 1,
+        title: "Advanced Calming Bites",
+        desc: "Soft chews to help support relaxation, calmness, and composure for dogs with normal stress. ",
+        price: 33.97,
+        img: "./image/product/product1.jpg",
+        quantity: 1,
+      },
+      {
+        id: 2,
+        title: "GNC Pet Wellness Coprophagia",
+        desc: "GNC Pets makes it easier than ever for your dog to feel their best with urinary tract dog supplement",
+        price: 25.98,
+        img: "./image/product/product2.jpg",
+        quantity: 1,
+      },
+      {
+        id: 3,
+        title: "Kaytee Supreme Rabbit Food",
+        desc: "This is a wholesome, high-quality mix that contains all of the natural protein, fiber, oils and nutrients of whole grains.",
+        price: 13.39,
+        img: "./image/product/product3.jpg",
+        quantity: 1,
+      },
+      {
+        id: 4,
+        title: "ThunderEssence Dog Calming Essential Oils",
+        desc: "This product helps reduce anxiety and decrease stress at home, on vet visits, car and air travel, kennel stays and more.",
+        price: 17.61,
+        img: "./image/product/product4.jpg",
+        quantity: 1,
+      },
+    ];
+
+    let stringCarts = JSON.stringify(carts); // chuoi hoa
+    // lenh setItem ("key, value")
+    localStorage.setItem("carts", stringCarts);
+  </script>
+</body>
+
+</html>

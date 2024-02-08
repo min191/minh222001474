@@ -1,0 +1,217 @@
+/* Additional CSS for HomePage */
+
+body {
+  font-family: 'Ziggy', sans-serif;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+  color: #343a40;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+/* Banner */
+.carousel-inner img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+.carousel-item .position-absolute {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-item h1,
+.carousel-item h2,
+.carousel-item h3 {
+  color: #fff;
+}
+
+.carousel-item button {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+/* Category */
+.card {
+  border: none;
+}
+
+.card-img {
+  border-radius: 8px;
+}
+
+.card-title,
+.card-text {
+  color: #fff;
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+
+/* Best Seller Product */
+.product1 {
+  border: none;
+  overflow: hidden;
+}
+
+.product1 img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.product1:hover img {
+  transform: scale(1.1);
+}
+
+.text-orange {
+  color: #f39c12;
+}
+
+/* Latest Blogs */
+.card-img-top {
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  color: #495057;
+}
+
+.footer-link {
+  color: #007bff;
+}
+
+.footer-link:hover {
+  text-decoration: none;
+  color: #0056b3;
+}
+
+.bg-blue {
+  background-color: #e5efff !important;
+}
+.bg-green {
+  background-color: #dfedc9 !important;
+}
+.bg-pink {
+  background-color: #f6e2e4 !important;
+}
+.bg-gray-d {
+  background-color: #f4f3ef !important;
+}
+
+.text-yellow {
+  color: #ffcb45 !important;
+}
+
+.text-orange {
+  color:  #ff782c!important;
+}
+
+.border-dot {
+  border-top: dotted #ff782c 2px;
+}
+
+.btn-orange {
+  background-color:#ff782c !important;
+}
+
+
+/* Hiệu ứng hover cho các phần tử trong class "categories" và "tag" */
+.home a:hover {
+    color: #ff782c !important; /* Màu sẽ thay đổi khi di chuột vào */
+}
+
+.shopping:hover .fa-cart-shopping{
+  color:#ff782c !important;
+}
+
+.heart:hover .fa-heart{
+  color:#ff782c !important;
+}
+
+.user:hover .fa-user{
+  color:#ff782c !important;
+}
+
+.wishlist-link:hover {
+  background-color:#dfedc9; /* Màu nền khi hover */
+}
+
+/* Thêm class .zoom vào để xác định hiệu ứng zoom */
+.zoom {
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.zoom:hover img {
+  transform: scale(1.2); /* Điều chỉnh mức độ zoom tùy ý */
+}
+
+
+
+
+.product1{
+    position: relative;
+}
+
+.product1 img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product1 a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    opacity: 0;
+    color: #f6f2f2;
+  }
+  
+
+.product1::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    transition: all liner 0.25s;
+}
+
+/*khi click chuot vao*/
+.product1:hover:before {
+    opacity: 0.5;
+
+  }
+.product1:hover a {
+    opacity: 1;
+  }
+
+
+

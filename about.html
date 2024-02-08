@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web của Minh</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/Iframe.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <!-- <link rel="stylesheet" href="./css/login_box-Iframe.css"> -->
+    <link rel="stylesheet" href="./css/about.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <ul class="header-nav">
+            <a href="#">
+                <img src="images/logoM.png" class="logo" alt="Logo">
+            </a>
+            <li class="nav-link ">
+                <a href="index.html">HOME</a>
+            </li>
+            <li class="nav-link ">
+                <a class="actives" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-link ">
+                <a href="project.html">PROJECT</a>
+            </li>
+            <li class="nav-link ">
+                <a href="contact.html">CONTACT</a>
+            </li>
+            <div class="container-search">
+                <input checked="" class="checkbox" type="checkbox">
+                <div class="mainbox">
+                    <div class="iconContainer">
+                        <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon">
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                            </path>
+                        </svg>
+                    </div>
+                    <input class="search_input" placeholder="search..." type="text">
+                </div>
+            </div>
+        </ul>
+        <!-- mobi -->
+        <div class="open-menu" onclick="myD()" style="width: 20px;">
+            <a><i class="menumobi fa-solid fa-bars" style="cursor: pointer; font-size: 30px;"></i></a>
+        </div>
+        <div class="menumobi-box" id="menumobi">
+
+            <div class="close-menu" onclick="myX()">
+                <i class="fa fa-times" aria-hidden="true" style="color: black; font-size: 30px; cursor: pointer;"></i>
+
+                <nav class="menumobi">
+                    <a href="index.html">HOME</a>
+
+                    <a href="about.html">ABOUT</a>
+
+                    <a href="project.html">PROJECT</a>
+
+                    <a href="contact.html">CONTACT</a>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- banner -->
+    <div class="banner-project">
+
+        <div class="section-title">
+            <h1 class="title-big">ABOUT</h1>
+            <h1 class="title-small">about me</h1>
+        </div>
+    </div>
+
+    <!-- end banner -->
+    <section id="about-info">
+        <div class="container">
+            <div id="animation_text" class="info-left">
+                <h1 class="l-heading"><span class="text-primary">About </span>Quang Minh </h1>
+                <p>
+                    Hello everyone, I'm Nguyen Quang Minh, a young individual full of energy and eager to learn. Born on
+                    January 19, 2004, I take pride in being a native of Bac Ninh province, where rich cultural
+                    traditions and continuous development shape my vibrant spirit.
+                </p>
+
+                <p>
+                    I am passionate about exploration, always excited by new challenges to develop my skills and
+                    knowledge. With a love for creativity, I constantly strive to approach problems in unique and
+                    innovative ways!
+                </p>
+            </div>
+            <div id="animation_img" class="info-right">
+                <img src="./images/mint1.jpg" alt="About Page">
+            </div>
+        </div>
+    </section>
+
+
+    <div class="content-profile">
+        <div class="about">
+            <div class="title">
+                <h3>History</h3>
+                <div id="line_title"></div>
+            </div>
+            <div class="about-container">
+                <div class="about-content">
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <h2>Working History</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3><a href="https://www.facebook.com/ancafe.co" target="_blank"> An cafe-Sales staff
+                                    </a></h3>
+                                <p>2020 - 2022</p>
+                                <p>The current time is very exciting; everyone is friendly. We are like a family, so I
+                                    have made many more friends while working there.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div>
+                                <h3><a href="https://at-tech.com.vn/" target="_blank"> Attech-Company intern </a></h3>
+                                <p>2022 - Present</p>
+                                <p>Working here, I have gained a lot of experience, and everyone in the company is very
+                                    friendly.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-content">
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <h2>Education History</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>Ninh Xa Secondary</h3>
+                                <p>2015-2019</p>
+                                <p>Expenses as material breeding insisted building to in. Continual so distrusts
+                                    pronounce by unwilling listening. Thing do taste on we manor.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>Han Thuyen high school</h3>
+                                <p>2019-2022</p>
+                                <p>So insisted received is occasion advanced honoured. Among ready to which up.
+                                    Attacks
+                                    smiling and may out assured moments man nothing outward.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>Thu Do university</h3>
+                                <p>2022-2026</p>
+                                <p>Excited him now natural saw passage offices you minuter. At by asked being
+                                    court
+                                    hopes. Farther so friends am to detract.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-profile">
+        <h2 style="padding: 30px;">What our Guests Say</h2>
+        <div class="carousel-container">
+            <button class="control-button" onclick="prevSlide()">❮</button>
+            <div class="carousel-wrapper">
+                <div class="carousel-item testimonial">
+                    <img src="./images/khoa.jpg" alt="Guest Image">
+                    <p>
+                        Quang Minh, bạn là một người đặc biệt, có nhiều phẩm chất đáng khen ngợi. Sự thông minh và sáng
+                        tạo của bạn là nguồn động viên lớn, <br>
+                        không chỉ giúp bạn tỏa sáng mà còn là nguồn động lực cho
+                        những người xung quanh
+                    </p>
+                </div>
+                <div class="carousel-item testimonial">
+                    <img src="./images/dat.jpg" alt="Guest Image">
+                    <p>
+                        Tinh thần làm việc của bạn rất tích cực và kiên trì. Bạn luôn hướng tới mục tiêu của mình một
+                        cách quyết tâm, không ngần ngại khó khăn.<br> Sự cam kết của bạn là điều đáng nể, đồng hành với
+                        đó
+                        là khả năng giải quyết vấn đề linh hoạt và sáng tạo, giúp bạn vượt qua mọi thách thức.
+                    </p>
+                </div>
+                <div class="carousel-item testimonial">
+                    <img src="./images/quang2.jpg" alt="Guest Image">
+                    <p>
+                        Quang Minh, sự xuất sắc và lòng nhiệt thành của bạn không chỉ làm cho bạn nổi bật mà còn là
+                        nguồn
+                        động viên và hỗ trợ quý báu cho mọi người xung quanh. <br> Tôi tin rằng với tất cả những phẩm
+                        chất
+                        tích cực này, bạn sẽ tiếp tục chinh phục những thành công mới trong cuộc sống và sự nghiệp của
+                        mình.
+                    </p>
+                </div>
+
+            </div>
+            <button class="control-button" onclick="nextSlide()">❯</button>
+        </div>
+
+
+
+    </div>
+    <footer class="footer">
+        <h2 id="item3">Contact</h2>
+
+        <div class="parent">
+
+            <div class="child child-1">
+                <button class="button btn-1">
+                    <a href="https://www.facebook.com/ngm.0119" target="_blank">
+                        <img src="images/FB2.png" style="width: 55%">
+                    </a>
+                </button>
+            </div>
+
+            <div class="child child-2">
+                <button class="button btn-2">
+                    <a href="https://www.instagram.com/ngw.mag/" target="_blank">
+                        <img src="images/insta.png" style="width: 110%">
+                    </a>
+                </button>
+            </div>
+
+            <div class="child child-3">
+                <button class="button btn-3">
+                    <a href="https://github.com/min191/minh222001474" target="_blank">
+                        <img src="images/GitHub1.png" style="width: 100%">
+                    </a>
+                </button>
+            </div>
+
+            <div class="child child-4">
+                <button class="button btn-4">
+                    <a href="#" target="_blank">
+                        <img src="images/ttw.png" style="width: 110%">
+                    </a>
+                </button>
+            </div>
+        </div>
+    </footer>
+    <button class="box-hidden show_login">
+        <i class="fa-regular fa-user"></i>
+    </button>
+</body>
+<script src="https://kit.fontawesome.com/7dc508f75f.js" crossorigin="anonymous"></script>
+<script src="./js/iframe.js"></script>
+<script src="./js/about.js"></script>
+<script src="./js/show&hiden_menumobi.js"></script>
+</html>

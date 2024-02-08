@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUpPage</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="Home_Page.css">
+    <!-- <link rel="stylesheet" href="all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ziggy" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Begin Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid mx-5 px-5">
+
+            <div class="ms-5 my-4">
+                <img src="https://demo2.themelexus.com/ziggy/wp-content/uploads/2022/05/logo.svg" alt="logo">
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse ms-5 ps-4" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-4 home">
+                        <a class="nav-link active text-dark fw-bold" href="./Home_page.html">Home</a>
+                    </li>
+
+                    <li class="nav-item ms-4 home">
+                        <a class="nav-link active text-dark fw-bold" href="./Product.html">Shop</a>
+                    </li>
+
+                    <li class="nav-item ms-4 home">
+                        <a class="nav-link active text-dark fw-bold" href="./About_Us.html">About Us</a>
+                    </li>
+
+                    <li class="nav-item blog ms-4 home">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle text-dark fw-bold" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Healthy Food</a></li>
+                                <li><a class="dropdown-item" href="#">Educational</a></li>
+                                <li><a class="dropdown-item" href="#">Lifestyles</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item ms-4 home">
+                        <a class="nav-link active text-dark fw-bold" href="./Contact_us.html">Contact Us</a>
+                    </li>
+                </ul>
+
+                <!--Search button-->
+                <div>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+
+                <!--Icon-->
+                <div class="d-flex mt-2">
+                    <div class="ms-3 user">
+                        <a href="./LogIn.html">
+                            <i class="fa-solid fa-user fs-5 text-dark"></i>
+                        </a>
+                        <div class="account-dropdown"></div>
+                    </div>
+                    <div class="ms-3 heart">
+                        <a href="./Wishlist.html">
+                            <i class="fa-solid fa-heart fs-5 text-dark"></i>
+                        </a>
+                    </div>
+
+                    <div class="ms-3 shopping position-relative">
+                        <a href="./Cart.html">
+                            <i type="button" class="fa-solid fa-cart-shopping fs-5 text-dark position-relative">
+                                <span
+                                    class="position-absolute top-0 start-100 ms-2 translate-middle badge rounded-pill bg-danger fs-6">0<span
+                                        class="visually-hidden">product</span></span>
+                            </i>
+                        </a>
+                    </div>
+
+                </div>
+                <!--End icon-->
+            </div>
+    </nav>
+    <!--End header-->
+
+    <!--Register Form-->
+    <div class="bg-blue">
+        <div class="container mx-auto px-5">
+            <div class="row justify-content-center align-items-stretch mt-5 rounded-3">
+                <!--Left-->
+                <div class="col-lg-5 p-0">
+                    <div class="position-relative">
+                        <img src="./image/Login.jpg" class="img-fluid pt-5 mt-5 w-100 rounded-start">
+
+                    </div>
+                </div>
+
+                <!--Right-->
+                <div class="col-lg-5 p-0">
+                    <form id="form" action="" class="bg-white rounded-3 py-5 px-5 mx-5 my-5" onsubmit="signup()">
+                        <div class="fw-bold text-center mb-3 fs-1 text-info">Sign Up</div>
+
+                        <div class="form-input text-left mb-2">
+                            <!--inline-block: sử dụng để căn lề, định dạng văn bản, hiển thị nhãn theo chiều ngang-->
+                            <label for="username" class="ms-4 mb-2 inline-block">
+                                Username
+                                <!--thẻ strong định dạng kích thước, màu sắc văn bản, inline-->
+                                <strong class="text-danger">*</strong>
+                            </label>
+                            <div class="mx-3">
+                                <input id="username" class="border w-100 rounded-pill px-3 py-2 border-secondary"
+                                    placeholder="Enter username">
+                            </div>
+                            <div class="error text-danger fs-6 ms-4" id="error-username" style="display: none">Wrong
+                                username</div>
+                        </div>
+
+                        <div class="text-left mb-2">
+                            <label for="pwd" class=" ms-4 text-sm font-medium mb-2 inline-block text-gray-600">
+                                Password
+                                <strong class="text-danger">*</strong>
+                            </label>
+                            <div class="mx-3">
+                                <input id="password" class="border w-100 rounded-pill px-3 py-2 border-secondary"
+                                    type="password" placeholder="Enter password">
+                            </div>
+                            <div class="error text-danger fs-6 ms-4" id="error-password" style="display: none">Invalid
+                                password</div>
+                        </div>
+
+                        <div class="text-left mb-2">
+                            <label for="pwd" class=" ms-4 text-sm font-medium mb-2 inline-block text-gray-600">
+                                Phone Number
+                                <strong class="text-danger">*</strong>
+                            </label>
+                            <div class="mx-3">
+                                <input id="phone" class="border w-100 rounded-pill px-3 py-2 border-secondary"
+                                    placeholder="Enter phone number">
+                            </div>
+                            <div class="error text-danger fs-6 ms-4" id="error-phone" style="display: none">Please enter
+                                phone with 10 digits</div>
+                        </div>
+
+                        <div class="mt-4 mx-3">
+                            <button id="signup"
+                                class="py-2 px-3 w-100 rounded-pill bg-info border border-secondary text-white fw-bold fs-5"
+                                type="submit">Create account</button>
+                        </div>
+
+                        <div class="text-center mt-3"><a href="./LogIn.html"
+                                class="fs-6 text-decoration-none text-dark">Log In</a></div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--End Register Form-->
+
+    <!-- begin footer -->
+    <footer class="py-3 mt-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <!--Block 1-->
+                <div class="col-lg-3 mb-3">
+                    <div class="mb-3">
+                        <img src="https://demo2.themelexus.com/ziggy/wp-content/uploads/2022/05/logo.svg" alt="logo">
+                    </div>
+                    <div class="fs-6 fw-normal text-secondary my-3">
+                        We know pets are like family, so we are committed to providing the highest-quality products that
+                        you can
+                        trust.</div>
+                    <div class="d-flex">
+                        <div><i class="fa-solid fa-phone fs-4"></i></div>
+                        <div class="ms-2 fs-6 fw-bold">Hotline Order</div>
+                    </div>
+                    <div class="text-danger fw-bold fs-5">(877)834 1434</div>
+                    <div class="d-flex me-3 my-4">
+                        <i class="me-5 fs-4 fa-brands fa-facebook"></i>
+                        <i class="me-5 fs-4 fa-brands fa-instagram"></i>
+                        <i class="me-5 fs-4 fa-brands fa-twitter"></i>
+                        <i class="me-5 fs-4 fa-brands fa-pinterest"></i>
+                    </div>
+                </div>
+                <!--Block 2-->
+                <div class=" col-6 col-lg-2 mb-3">
+                    <div class="mb-4">
+                        <h2 class="text-uppercase fw-bold fs-6">useful links</h2>
+                    </div>
+                    <div>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 ">
+                                <a class="text-secondary" style="text-decoration: none;" href="">New Products</a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-secondary" style="text-decoration: none;" href="">Best Sellers</a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-secondary" style="text-decoration: none;" href="">Bundle & Save</a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-secondary" style="text-decoration: none;" href="">Online Gift Card</a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-secondary" style="text-decoration: none;" href="">Discount</a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-secondary" style="text-decoration: none;" href="">Pet Store Locator</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!--Block 3-->
+                <div class="col-6 col-lg-2 mb-3">
+                    <div class="mb-4">
+                        <h2 class="text-uppercase fw-bold fs-6">my account</h2>
+                    </div>
+                    <div>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 ">
+                                <a class="text-secondary" style="text-decoration: none;" href="">My Profile</a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-secondary" style="text-decoration: none;" href="">My Order History</a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-secondary" style="text-decoration: none;" href="">My Wish List</a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-secondary" style="text-decoration: none;" href="">Order Tracking</a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-secondary" style="text-decoration: none;" href="">Shipping Info</a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-secondary" style="text-decoration: none;" href="">Shopping Cart</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Block 4-->
+                <div class="col-6 col-lg-2 mb-3">
+                    <div class="mb-4">
+                        <h2 class="text-uppercase fw-bold fs-6">company</h2>
+                    </div>
+                    <div>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 ">
+                                <a class="text-secondary" style="text-decoration: none;" href="">About us</a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-secondary" style="text-decoration: none;" href="">Careers</a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-secondary" style="text-decoration: none;" href="">Blog</a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-secondary" style="text-decoration: none;" href="">Affiliate</a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-secondary" style="text-decoration: none;" href="">Contact Us</a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-secondary" style="text-decoration: none;" href="">Gift Cards</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Block 5-->
+                <div class="col-lg-3 mb-3">
+                    <div class="mb-4">
+                        <h2 class="text-uppercase fw-bold fs-6">newsletter</h2>
+                    </div>
+                    <div class="fs-6 fw-normal text-secondary my-3">
+                        Subscrible & get 10% discount. Get E-mail updates about our latest shop and special offers.
+                    </div>
+
+                    <div>
+                        <div>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="email" placeholder="Enter your email"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-dark" type="submit"><i
+                                        class="fa-solid fa-envelope"></i></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="d-fex mt-3">
+                        <span>
+                            <i class="fa-solid fa-mobile-screen-button fs-3 me-2"></i>
+                        </span>
+                        <span class="fw-bold fs-6">Download Our App</span>
+                    </div>
+
+                    <div class="d-flex mt-4">
+                        <div>
+                            <img class="me-2" src="./image/footer/App-Store.jpg">
+                        </div>
+                        <div>
+                            <img src="./image/footer/Google-Play.jpg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- end footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./SignUp.js"></script>
+
+</body>

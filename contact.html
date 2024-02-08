@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web của Minh</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/animation.css">
+  <link rel="stylesheet" href="./css/Iframe.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <!-- <link rel="stylesheet" href="./css/login_box-Iframe.css"> -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body>
+  <header class="header">
+    <ul class="header-nav">
+      <a href="#">
+        <img src="images/logoM.png" class="logo" alt="Logo">
+      </a>
+      <li class="nav-link ">
+        <a href="index.html">HOME</a>
+      </li>
+      <li class="nav-link ">
+        <a href="about.html">ABOUT</a>
+      </li>
+      <li class="nav-link ">
+        <a href="project.html">PROJECT</a>
+      </li>
+      <li class="nav-link ">
+        <a class="actives" href="contact.html">CONTACT</a>
+      </li>
+      <div class="container-search">
+        <input checked="" class="checkbox" type="checkbox">
+        <div class="mainbox">
+          <div class="iconContainer">
+            <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon">
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+              </path>
+            </svg>
+          </div>
+          <input class="search_input" placeholder="search..." type="text">
+        </div>
+      </div>
+    </ul>
+    <!-- mobi -->
+    <div class="open-menu" onclick="myD()" style="width: 20px;">
+      <a><i class="menumobi fa-solid fa-bars" style="cursor: pointer; font-size: 30px;"></i></a>
+    </div>
+    <div class="menumobi-box" id="menumobi">
+
+      <div class="close-menu" onclick="myX()">
+        <i class="fa fa-times" aria-hidden="true" style="color: black; font-size: 30px; cursor: pointer;"></i>
+
+        <nav class="menumobi">
+          <a href="index.html">HOME</a>
+
+          <a href="about.html">ABOUT</a>
+
+          <a href="project.html">PROJECT</a>
+
+          <a href="contact.html">CONTACT</a>
+
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- banner -->
+  <div class="banner-contact">
+
+    <div class="section-title">
+      <h1 class="title-big">Contact</h1>
+      <h1 class="title-small">contact me</h1>
+    </div>
+  </div>
+
+  <!-- end banner -->
+
+  <div class="contact-profile">
+    <div class="contact_container">
+      <div>
+        <div class="card">
+          <p class="heading">what you say ?</p>
+
+          <div class="input-div">
+            <!-- <label for="name">Họ và Tên:</label> -->
+            <input class="input" id="nameInput" type="text" placeholder="Name">
+          </div>
+          <div class="input-div">
+            <!-- <label for="email">Email:</label> -->
+            <input type="text" id="emailInput" for="email" class="input" placeholder="Email">
+          </div>
+          <div class="input-div">
+            <input class="input" id="messageInput" type="text" placeholder="Message">
+          </div>
+          <div class="button-div">
+            <div class="message" id="Message">Bạn đã gửi thành công.</div>
+            <div class="error" id="error">Vui lòng nhập đủ thông tin.</div>
+            <button class="submit" onclick="submitForm()">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9208668708675!2d105.79875297471456!3d21.035852087536032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab3f57fc23d1%3A0xf813dfd05dfa4078!2sHanoi%20Metropolitan%20University!5e0!3m2!1sfr!2sus!4v1706407875608!5m2!1sfr!2sus"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <h2 id="item3">Contact</h2>
+
+    <div class="parent">
+
+      <div class="child child-1">
+        <button class="button btn-1">
+          <a href="https://www.facebook.com/ngm.0119" target="_blank">
+            <img src="images/FB2.png" style="width: 55%">
+          </a>
+        </button>
+      </div>
+
+      <div class="child child-2">
+        <button class="button btn-2">
+          <a href="https://www.instagram.com/ngw.mag/" target="_blank">
+            <img src="images/insta.png" style="width: 110%">
+          </a>
+        </button>
+      </div>
+
+      <div class="child child-3">
+        <button class="button btn-3">
+          <a href="https://github.com/min191/minh222001474" target="_blank">
+            <img src="images/GitHub1.png" style="width: 100%">
+          </a>
+        </button>
+      </div>
+
+      <div class="child child-4">
+        <button class="button btn-4">
+          <a href="#" target="_blank">
+            <img src="images/ttw.png" style="width: 110%">
+          </a>
+        </button>
+      </div>
+    </div>
+  </footer>
+  <button class="box-hidden show_login">
+    <i class="fa-regular fa-user"></i>
+  </button>
+
+  </div>
+</body>
+<script src="https://kit.fontawesome.com/7dc508f75f.js" crossorigin="anonymous"></script>
+<script src="./js/iframe.js"></script>
+<script src="./js/contact.js"></script>
+<script src="./js/search.js"></script>
+<script src="./js/show&hiden_menumobi.js"></script>
+
+</html>

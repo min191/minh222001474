@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="all.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css" />
+    <link rel="stylesheet" href="./css/home-page.css" />
+  </head>
+  <body onload="loadSlsp()">
+    <div class="row container-fluid bg-dark">
+      <!--begin head -->
+
+      <div class="col-sm-6 col-lg-7 d-none d-sm-none d-md-none d-lg-block">
+        <h4 class="text-center text-light fs-6 fw-light lh-1">
+          <span
+            ><i
+              class="fa-solid fa-triangle-exclamation fs-3 text-warning mt-2"
+            ></i
+          ></span>
+          <p class="my-1">
+            Sản phẩm này Không dành cho người dưới 18 tuổi và phụ nữ đang mang
+            thai.
+          </p>
+          <p>Sống có trách nhiệm và Không lái xe khi đã sử dụng rượu bia.</p>
+        </h4>
+      </div>
+
+      <div
+        class="col-sm-6 col-lg-5 align-items-center d-md-flex"
+      >
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="" class="text-light px-4" data-bs-toggle="dropdown"
+              ><i class="fa-solid fa-magnifying-glass fs-5"></i
+            ></a>
+            <ul class="dropdown-menu my-4 bg-dark">
+              <li class="dropdown-item">
+                <input
+                  class="input-group"
+                  type="text"
+                  class="form-control"
+                  placeholder="Search"
+                />
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="" class="text-light px-4" data-bs-toggle="dropdown"
+              ><i class="fa-solid fa-user fs-5"></i
+            ></a>
+            <ul class="dropdown-menu my-4 bg-dark">
+              <li class="dropdown-item">
+                <a href="" class="text-decoration-none text-danger"
+                  >Đăng nhập</a
+                >
+              </li>
+              <li class="dropdown-item">
+                <a href="dangkytk.html" class="text-decoration-none text-danger"
+                  >Đăng ký</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="" class="text-light px-4"
+              ><i class="fa-solid fa-heart text-danger fs-5"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a href="giohang(cart).html" class="text-light px-4 text-decoration-none"
+              ><i class="fa-solid fa-cart-shopping fs-5"></i>
+              <sup><small class="fs-5 text-warning" id="cart-Sl"></small></sup>
+              
+          </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--end head -->
+   
+    <nav id="menu" class="navbar navbar-expand-sm navbar-light bg-light d-lg-block d-md-none d-none">
+      <!--begin menu ngang-->
+      <div class="d-flex container justify-content-center">
+        <!--begin container1 -->
+        <ul class="navbar-nav d-flex align-items-center">
+          <li class="nav-item me-4 hidden-sm hidden-xs active">
+            <a class="nav-link active" aria-current="page" href="home.html"
+              >TRANG CHỦ</a
+            >
+          </li>
+          <li class="nav-item me-4 hidden-sm hidden-xs">
+            <a class="nav-link active" aria-current="page" href="gioithieu.html"
+              >GIỚI THIỆU</a
+            >
+          </li>
+          <a class="navbar-brand" href="home.html">
+            <img src="./img/logo.webp" alt="" />
+          </a>
+          <li class="nav-item dropdown hidden-sm hidden-xs">
+            <a class="text-decoration-none text-dark" href="sanpham.html"
+            >SẢN PHẨM <i class="fa-solid fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Rượu pha</a></li>
+              <li><a class="dropdown-item" href="#">Rượu ngoại</a></li>
+              <li><a class="dropdown-item" href="#">Rượu tri ân</a></li>
+              <li><a class="dropdown-item" href="#">Rượu vodka</a></li>
+              <li><a class="dropdown-item" href="#">Giỏ quà biếu</a></li>
+              <li><a class="dropdown-item" href="#">Rượu vang nhập khẩu</a></li>
+              <li><a class="dropdown-item" href="#">Hàng sắp về</a></li>
+              <li><a class="dropdown-item" href="#">Hàng mới về</a></li>
+              <li><a class="dropdown-item" href="#">Sản phẩm bán chạy</a></li>
+              <li><a class="dropdown-item" href="#">Sản phẩm ưu đãi </a></li>
+            </ul>
+          </li>
+          <li class="nav-item ms-4 hidden-sm hidden-xs">
+            <a class="nav-link active" aria-current="page" href="tintuc.html">TIN TỨC</a>
+          </li>
+        </ul>
+      </div>
+      <!--end container1-->
+    </nav>
+    <nav id="menu" class="navbar navbar-expand-sm navbar-light bg-light d-lg-none d-md-block">
+      <!--begin menu ngang mobe-->
+    
+      <div class="d-flex container justify-content-between">
+        <!--begin container1 -->
+       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav d-flex align-items-center">
+         
+         
+          <li class="nav-item me-4 hidden-sm hidden-xs active">
+            <a class="nav-link active" aria-current="page" href="home.html"
+              >TRANG CHỦ</a
+            >
+          </li>
+          <li class="nav-item me-4 hidden-sm hidden-xs">
+            <a class="nav-link active" aria-current="page" href="gioithieu.html"
+              >GIỚI THIỆU</a
+            >
+          </li>
+         
+          <li class="nav-item dropdown hidden-sm hidden-xs">
+            <a class="text-decoration-none text-dark" href="sanpham.html"
+            >SẢN PHẨM <i class="fa-solid fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Rượu pha</a></li>
+              <li><a class="dropdown-item" href="#">Rượu ngoại</a></li>
+              <li><a class="dropdown-item" href="#">Rượu tri ân</a></li>
+              <li><a class="dropdown-item" href="#">Rượu vodka</a></li>
+              <li><a class="dropdown-item" href="#">Giỏ quà biếu</a></li>
+              <li><a class="dropdown-item" href="#">Rượu vang nhập khẩu</a></li>
+              <li><a class="dropdown-item" href="#">Hàng sắp về</a></li>
+              <li><a class="dropdown-item" href="#">Hàng mới về</a></li>
+              <li><a class="dropdown-item" href="#">Sản phẩm bán chạy</a></li>
+              <li><a class="dropdown-item" href="#">Sản phẩm ưu đãi </a></li>
+            </ul>
+          </li>
+          <li class="nav-item ms-4 hidden-sm hidden-xs">
+            <a class="nav-link active" aria-current="page" href="tintuc.html">TIN TỨC</a>
+          </li>
+        </ul>
+        </div>
+        <a class="navbar-brand d-flex justify-content-center" href="home.html">
+          <img src="./img/logo.webp" alt="" />
+        </a>
+      </div>
+      <!--end container1-->
+    </nav>
+
+    <!--end menu ngang mobe-->
+        <div class="container border-bottom">
+            <div class="row">
+                <div class="col-xs-12 ">
+                    <ul class="list-unstyled">
+                        <li ><a class="text-decoration-none" href="home.html"> <span>Trang chủ</span></a> <span>|</span> <span>Tin tức</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-sm-12 ">
+                    <div>
+                        <h1 class="fs-3 fw-bold mb-4"><a class="text-decoration-none text-dark" href="">TIN TỨC</a></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" row col-lg-9 col-md-9">
+                    <div class="col-sm-6 mt-3">
+                        <div><a href=""><img src="./img/img-tintuc1.jpg" alt="" width="450" height="230"  class="d-block w-100"></a></div>
+                        <div>
+                            <h3 class="mt-3"><a class="text-decoration-none text-dark fw-bold fs-5 " href="">Nhu cầu sử dụng rượu vang biếu tặng ngày càng tăng cao ở Việt Nam</a></h3>
+                            <div class="my-3">
+                                "Đăng bởi" <span> Thu Nhung </span> " 10:08 20/04/2023 0 bình luận"
+                            </div>
+                            <p class="fs-6 fw-light">Trong những năm gần đây nhu cầu sử dụng rượu vang ở thị trường Việt Nam ngày càng tăng cao, được nhiều người tiêu dùng sử dụng trong bữa ăn hàng ngày hoặc trong các bữa tiệc. 
+                                Rượu vang thường được nhập khẩu từ các nước như,...</p>
+                            <a class="text-decoration-none" href="https://kinhtedothi.vn/nhu-cau-su-dung-ruou-vang-bieu-tang-ngay-cang-tang-cao-o-viet-nam.html">Đọc thêm</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mt-3">
+                        <div><a href=""><img src="./img/img-tintuc2.webp" alt="" width="450" height="230"  class="d-block w-100"></a></div>
+                        <div class="my-3">
+                            <h3 class="mt-3"><a class="text-decoration-none text-dark fw-bold fs-5 " href="">Uống rượu vang đỏ hằng ngày có ảnh hưởng gì cho sức khỏe?</a></h3>
+                            <div class="my-3">
+                                "Đăng bởi" <span> Hà Linh
+                                     </span> " 06/04/2023 05:30 0 bình luận"
+                            </div>
+                            <p class="fs-6 fw-light">Rượu vang, đặc biệt là rượu vang đỏ, đã nổi tiếng là có lợi cho sức khỏe, nhưng các nghiên cứu mới hơn đã phát hiện ra rằng ngay cả việc tiêu thụ vừa phải cũng có thể gây ra các vấn đề về sức khỏe...</p>
+                            <a class="text-decoration-none" href="https://www.vietnamplus.vn/uong-ruou-vang-do-hang-ngay-co-anh-huong-gi-cho-suc-khoe-post855478.vnp">Đọc thêm</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mt-3">
+                        <div><a href=""><img src="./img/img-tintuc3.webp" alt="" width="450" height="230"  class="d-block w-100"></a></div>
+                        <div class="my-3">
+                            <h3 class="mt-3"><a class="text-decoration-none text-dark fw-bold fs-5 " href="">Phát hiện chai rượu vang 1.700 năm trong ngôi mộ cổ vẫn uống được</a></h3>
+                            <div class="my-3">
+                                "Đăng bởi" <span> Huy Hoàng
+                                     </span> " Thứ ba, 17/01/2023 - 14:19 0 bình luận"
+                            </div>
+                            <p class="fs-6 fw-light">Các nhà khảo cổ học tìm thấy một chai rượu vang đặt trong ngôi mộ cổ từ thời La Mã với tuổi đời khoảng 1.700 năm, bên trong chứa chất lỏng có thể vẫn uống được...</p>
+                            <a class="text-decoration-none" href="https://dantri.com.vn/du-lich/phat-hien-chai-ruou-vang-1700-nam-trong-ngoi-mo-co-van-uong-duoc-20230117135054433.htm">Đọc thêm</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mt-3">
+                        <div><a href=""><img src="./img/img-tintuc4.webp" alt="" width="450" height="230"  class="d-block w-100"></a></div>
+                        <div class="my-3">
+                            <h3 class="mt-3"><a class="text-decoration-none text-dark fw-bold fs-5 " href="">Khám phá biểu tượng rượu vang Bertani nổi tiếng thế giới</a></h3>
+                            <div class="my-3">
+                                "Đăng bởi" <span> Thu Nhung </span> " 17/10/2023 10:00 AM  0 bình luận"
+                            </div>
+                            <p class="fs-6 fw-light">Rượu vang luôn là một phần quan trọng trong văn hóa nước Ý. Được thành lập năm 1857, Bertani là nhà rượu vang uy tín đã mang đến cho thế giới những dòng rượu vang tuyệt vời, thể hiện tinh hoa của đất nước này...</p>
+                            <a class="text-decoration-none" href="https://cafebiz.vn/kham-pha-bieu-tuong-ruou-vang-bertani-noi-tieng-the-gioi-176231017092119292.chn">Đọc thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3" >
+                    <div class="bg-info mt-3 "><h2 class="text-center pb-2"><a class="text-decoration-none fs-6 text-light " href="">CÁC BÀI VIẾT LIÊN QUAN</a></h2></div>
+                    <div class="row d-flex justify-content-between my-3">
+                        <div class="col-lg-5"><a href="https://kinhtedothi.vn/nhu-cau-su-dung-ruou-vang-bieu-tang-ngay-cang-tang-cao-o-viet-nam.html"><img src="./img/img-tintuc1.jpg" alt="" width="100%" height="100%"  class="d-block w-100"></a></div>
+                        <div class="col-lg-7" ><a class="fs-6 fw-light text-decoration-none text-dark" href="">Nhu cầu sử dụng rượu vang biếu tặng ngày càng tăng cao ở Việt Nam</a></div>
+                    </div>
+                    <div class="row d-flex justify-content-between my-3">
+                      <div class="col-lg-5"><a href="https://www.vietnamplus.vn/uong-ruou-vang-do-hang-ngay-co-anh-huong-gi-cho-suc-khoe-post855478.vnp"><img src="./img/img-tintuc2.webp" alt=""width="100%" height="100%"  class="d-block w-100"></a></div>
+                      <div class="col-lg-7" ><a class="fs-6 fw-light text-decoration-none text-dark" href="">Uống rượu vang đỏ hằng ngày có ảnh hưởng gì cho sức khỏe?</a></div>
+                    </div>
+                    <div class="row d-flex justify-content-between my-3">
+                      <div class="col-lg-5"><a href="https://dantri.com.vn/du-lich/phat-hien-chai-ruou-vang-1700-nam-trong-ngoi-mo-co-van-uong-duoc-20230117135054433.htm"><img src="./img/img-tintuc3.webp" alt=""width="100%" height="100%"  class="d-block w-100"></a></div>
+                      <div class="col-lg-7" ><a class="fs-6 fw-light text-decoration-none text-dark" href="">Phát hiện chai rượu vang 1.700 năm trong ngôi mộ cổ vẫn uống được</a></div>
+                    </div>
+                    <div class="row d-flex justify-content-between my-3">
+                      <div class="col-lg-5"><a href="https://cafebiz.vn/kham-pha-bieu-tuong-ruou-vang-bertani-noi-tieng-the-gioi-176231017092119292.chn"><img src="./img/img-tintuc4.webp" alt=""width="100%" height="100%"  class="d-block w-100"></a></div>
+                      <div class="col-lg-7" ><a class="fs-6 fw-light text-decoration-none text-dark" href="">Khám phá biểu tượng rượu vang Bertani nổi tiếng thế giới</a></div>
+                    </div>
+                    <div class="row d-flex justify-content-between my-3">
+                      <div class="col-lg-5"><a href="https://www.24h.com.vn/suc-khoe-doi-song/nhung-tranh-cai-ve-uong-ruou-vang-tot-hay-xau-voi-suc-khoe-c62a1490455.html"><img src="./img/img-tintuc5.jpg" alt=""width="100%" height="100%"  class="d-block w-100"></a></div>
+                      <div class="col-lg-7" ><a class="fs-6 fw-light text-decoration-none text-dark" href="">Những tranh cãi về uống rượu vang tốt hay xấu với sức khỏe</a></div>
+                    </div>
+                    <div class="row d-flex justify-content-between my-3">
+                      <div class="col-lg-5"><a href="https://www.rfi.fr/vi/v%C4%83n-h%C3%B3a/20230717-m%E1%BB%B9-xu%E1%BA%A5t-b%E1%BA%A3n-b%C3%A1ch-khoa-to%C3%A0n-th%C6%B0-v%E1%BB%81-ngh%E1%BB%87-thu%E1%BA%ADt-pha-r%C6%B0%E1%BB%A3u"><img src="./img/img-tintuc6.webp" alt=""width="100%" height="100%"  class="d-block w-100"></a></div>
+                      <div class="col-lg-7" ><a class="fs-6 fw-light text-decoration-none text-dark" href="">Mỹ xuất bản ''bách khoa toàn thư'' về nghệ thuật pha rượu</a></div>
+                    </div>
+                    <div class="row d-flex justify-content-between my-3">
+                      <div class="col-lg-5"><a href="https://www.vietnamplus.vn/uong-ruou-vang-do-hang-ngay-co-anh-huong-gi-cho-suc-khoe-post855478.vnp"><img src="./img/img-tintuc2.webp" alt=""width="100%" height="100%"  class="d-block w-100"></a></div>
+                      <div class="col-lg-7" ><a class="fs-6 fw-light text-decoration-none text-dark " href="">Uống rượu vang đỏ hằng ngày có ảnh hưởng gì cho sức khỏe?</a></div>
+                    </div>
+                    <div class="row d-flex justify-content-between my-3">
+                      <div class="col-lg-5"><a href="https://cafebiz.vn/kham-pha-bieu-tuong-ruou-vang-bertani-noi-tieng-the-gioi-176231017092119292.chn"><img src="./img/img-tintuc4.webp" alt=""width="100%" height="100%"  class="d-block w-100"></a></div>
+                      <div class="col-lg-7" ><a class="fs-6 fw-light text-decoration-none text-dark" href="">Khám phá biểu tượng rượu vang Bertani nổi tiếng thế giới</a></div>
+                    </div>
+                    <a class="text-decoration-none" href="">Xem thêm tin tức</a>
+                </div>
+                
+
+            </div>
+        </div>
+        
+   <!-- begin footer -->
+   <div class="row">
+    <!-- begin 6 logo icon-->
+    <div class="col-lg-2 col-sm-2 d-none d-sm-none d-md-none d-lg-block">
+      <a href=""><img src="./img/7icon-1.webp" alt="" /></a>
+    </div>
+    <div class="col-lg-2 col-sm-2  d-none d-sm-none d-md-none d-lg-block">
+      <a href=""><img src="./img/7icon-2.webp" alt="" /></a>
+    </div>
+    <div class="col-lg-2 col-sm-2  ">
+      <a href=""><img src="./img/7icon-3.webp" alt="" /></a>
+    </div>
+    <div class="col-lg-2 col-sm-2  d-none d-sm-none d-md-none d-lg-block">
+      <a href=""><img src="./img/7icon-4.webp" alt="" /></a>
+    </div>
+    <div class="col-lg-2 col-sm-2 d-none d-sm-none d-md-none d-lg-block">
+      <a href=""><img src="./img/7icon-5.webp" alt="" /></a>
+    </div>
+    <div class="col-lg-2 col-sm-2 d-none d-sm-none d-md-none d-lg-block">
+      <a href=""><img src="./img/7icon-6.webp" alt="" /></a>
+    </div>
+  </div>
+  <!-- end 6 logo icon-->
+</div>
+</div>
+<!--begin maps  -->
+<div class="row bg-dark container-fluid">
+<div class="col-lg-3 my-5">
+  <h3 class="text-light text-center fs-4">THÔNG TIN</h3>
+  <ul class="nav flex-column align-items-center">
+    <li class="nav-item">
+      <a class="nav-link text-light" href="home.html">Trang chủ</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="gioithieu.html">Giới thiệu</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="sanpham.html">Sản phẩm</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="tintuc.html">Tin tức</a>
+    </li>
+  </ul>
+</div>
+<div class="col-lg-5 my-5">
+  <a href=""
+    ><img
+      width="500"
+      height="300"
+      src="./img/maps.PNG"
+      class="d-block w-100"
+      alt=""
+  /></a>
+</div>
+<div class="col-lg-4 my-5">
+  <h3 class="text-center fs-4"><a href="">Winehouse.com.vn</a></h3>
+  <ul class="text-light fs-6 text-center">
+    <li class="list-unstyled">
+      <a href=""><i class="fa-solid fa-location-dot"></i></a> Địa chỉ: Mễ
+      Trì, Nam Từ Liêm, Hà Nội
+    </li>
+    <li class="list-unstyled">
+      <a href=""><i class="fa-solid fa-phone-volume"></i></a> Điện thoại:
+      096xxxxxx
+    </li>
+    <li class="list-unstyled">
+      <a href=""><i class="fa-solid fa-envelope"></i> </a>Email:
+      <a href="">Winehouse.com.vn</a>
+    </li>
+  </ul>
+  <h3 class="text-center text-light fs-6">CHIA SẺ MẠNG XÃ HỘI</h3>
+  <ul class="text-center text-light fs-6">
+    <li class="list-unstyled">
+      <a href=""><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+    </li>
+    <li class="list-unstyled">
+      <a href=""><i class="fa-brands fa-google-plus"></i> Google+</a>
+    </li>
+    <li class="list-unstyled">
+      <a href=""><i class="fa-brands fa-youtube"></i> Youtobe</a>
+    </li>
+  </ul>
+</div>
+</div>
+<!-- end maps -->
+<div class="row py-4 bg-light">
+<div class="col-lg-6 text-center text-dark fs-5">
+  Bản quyền thuộc về Mint
+</div>
+<div class="col-lg-6 text-center fs-5">
+  <img src="./img/payment.webp" alt="" />
+</div>
+</div>
+<!-- end footer -->
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"
+></script>
+<script src="./js/cart.js"></script>
+</body>
+</html>

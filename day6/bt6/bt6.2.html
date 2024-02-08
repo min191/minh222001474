@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <style>
+            /* * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                box-sizing: border-box;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin: 50px;
+            } */
+            .calculatorForm {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                justify-content: center;
+                margin-top: 20px;
+            }
+            .result {
+                width: 100px;
+                height: 22px;
+                background-color: #fff;
+                outline: none;
+                border: 1px solid black;
+            }
+            h1 {
+                text-align: center;
+            }
+            .calculatorForm .operator {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                outline: none;
+                background-color: inherit;
+            }
+            #calculationContainer {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .form {
+                text-align: start;
+                line-height: 1.5;
+            }
+            h3{
+                /* text-align: start; */
+                width: 100px;
+            }
+            .operand{
+                outline: none;
+            }
+            .btn{
+                background-color: #fff;
+                outline: none;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+
+        <div class="form">
+            <form class="calculatorForm">
+                <h3>Phép cộng</h3>
+                <input class="operand" required />
+                <button class="operator">+</button>
+                <input class="operand" required />
+                <button class="btn" type="button" onclick="calculate('+', this)">=</button>
+                <div class="result"></div>
+            </form>
+
+            <form class="calculatorForm">
+                <h3>Phép trừ</h3>
+                <input class="operand" required />
+                <button class="operator">-</button>
+                <input class="operand" required />
+                <button class="btn" type="button" onclick="calculate('-', this)">=</button>
+                <div class="result"></div>
+            </form>
+
+            <form class="calculatorForm">
+                <h3>Phép nhân</h3>
+                <input class="operand" required />
+                <button class="operator">*</button>
+                <input class="operand" required />
+                <button class="btn" type="button" onclick="calculate('*', this)">=</button>
+                <div class="result"></div>
+            </form>
+
+            <form class="calculatorForm">
+                <h3>Phép chia</h3>
+                <input class="operand" required />
+                <button class="operator">/</button>
+                <input class="operand" required />
+                <button class="btn" type="button" onclick="calculate('/', this)">=</button>
+                <div class="result"></div>
+            </form>
+        </div>
+        <div id="calculationContainer">
+            <div class="content">
+                <h2 class="text1">Phép cộng</h2>
+                <div id="calculationContainer1"></div>
+            </div>
+            <div class="content">
+                <h2 class="text2">Phép trừ</h2>
+                <div id="calculationContainer2"></div>
+            </div>
+            <div class="content">
+                <h2 class="text3">Phép nhân</h2>
+                <div id="calculationContainer3"></div>
+            </div>
+            <div class="content">
+                <h2 class="text4">Phép chia</h2>
+                <div id="calculationContainer4"></div>
+            </div>
+        </div>
+
+        <script>
+            function calculate(operator, button) {
+                var form = button.closest(".calculatorForm");
+                var operand1 = parseFloat(form.querySelector(".operand").value);
+                var operand2 = parseFloat(
+                    form.querySelectorAll(".operand")[1].value
+                );
+
+                var result;
+                switch (operator) {
+                    case "+":
+                        result = operand1 + operand2;
+                        break;
+                    case "-":
+                        result = operand1 - operand2;
+                        break;
+                    case "*":
+                        result = operand1 * operand2;
+                        break;
+                    case "/":
+                        if (operand2 !== 0) {
+                            result = operand1 / operand2;
+                        } else {
+                            return;
+                        }
+                        break;
+                    default:
+                        result = "Không hỗ trợ phép toán";
+                }
+
+                if (operator === "+") {
+                    form.querySelector(".result").innerHTML = result;
+                    var calculationText =
+                        operand1 +
+                        " " +
+                        operator +
+                        " " +
+                        operand2 +
+                        " = " +
+                        result;
+                    document.getElementById("calculationContainer1").innerHTML =
+                        calculationText;
+                    document.getElementById(
+                        "calculationContainer1"
+                    ).style.color = "red";
+                    document.querySelector(".text1").style.color = "red";
+                } else if (operator === "-") {
+                    form.querySelector(".result").innerHTML = result;
+                    var calculationText =
+                        operand1 +
+                        " " +
+                        operator +
+                        " " +
+                        operand2 +
+                        " = " +
+                        result;
+                    document.getElementById("calculationContainer2").innerHTML =
+                        calculationText;
+                    document.getElementById(
+                        "calculationContainer2"
+                    ).style.color = "red";
+                    document.getElementById(
+                        "calculationContainer1"
+                    ).style.color = "black";
+                    document.querySelector(".text2").style.color = "red";
+                    document.querySelector(".text1").style.color = "black";
+                } else if (operator === "*") {
+                    form.querySelector(".result").innerHTML = result;
+                    var calculationText =
+                        operand1 +
+                        " " +
+                        operator +
+                        " " +
+                        operand2 +
+                        " = " +
+                        result;
+                    document.getElementById("calculationContainer3").innerHTML =
+                        calculationText;
+                    document.getElementById(
+                        "calculationContainer3"
+                    ).style.color = "red";
+                    document.getElementById(
+                        "calculationContainer2"
+                    ).style.color = "black";
+                    document.querySelector(".text3").style.color = "red";
+                    document.querySelector(".text2").style.color = "black";
+                } else if (operator === "/") {
+                    form.querySelector(".result").innerHTML = result;
+                    var calculationText =
+                        operand1 +
+                        " " +
+                        operator +
+                        " " +
+                        operand2 +
+                        " = " +
+                        result;
+                    document.getElementById("calculationContainer4").innerHTML =
+                        calculationText;
+                    document.getElementById(
+                        "calculationContainer4"
+                    ).style.color = "red";
+                    document.getElementById(
+                        "calculationContainer3"
+                    ).style.color = "black";
+                    document.querySelector(".text4").style.color = "red";
+                    document.querySelector(".text3").style.color = "black";
+                }
+            }
+        </script>
+    </body>
+</html>

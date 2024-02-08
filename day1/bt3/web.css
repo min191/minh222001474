@@ -1,0 +1,10 @@
+.title{
+   text-align: center;
+}
+.content{
+    width: 960px;
+    margin: 0 auto;
+}
+.item{
+    width: 250px;
+}

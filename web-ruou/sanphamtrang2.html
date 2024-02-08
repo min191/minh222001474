@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="all.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css" />
+    <link rel="stylesheet" href="./css/home-page.css" />
+  </head>
+  <body onload="loaddatacart()">
+    <div class="row container-fluid bg-dark">
+      <!--begin head -->
+
+      <div class="col-sm-6 col-lg-7 d-none d-sm-none d-md-none d-lg-block">
+        <h4 class="text-center text-light fs-6 fw-light lh-1">
+          <span
+            ><i
+              class="fa-solid fa-triangle-exclamation fs-3 text-warning mt-2"
+            ></i
+          ></span>
+          <p class="my-1">
+            Sản phẩm này Không dành cho người dưới 18 tuổi và phụ nữ đang mang
+            thai.
+          </p>
+          <p>Sống có trách nhiệm và Không lái xe khi đã sử dụng rượu bia.</p>
+        </h4>
+      </div>
+
+      <div
+        class="col-sm-6 col-lg-5 align-items-center d-md-flex"
+      >
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="" class="text-light px-4" data-bs-toggle="dropdown"
+              ><i class="fa-solid fa-magnifying-glass fs-5"></i
+            ></a>
+            <ul class="dropdown-menu my-4 bg-dark">
+              <li class="dropdown-item">
+                <input
+                  class="input-group"
+                  type="text"
+                  class="form-control"
+                  placeholder="Search"
+                />
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="" class="text-light px-4" data-bs-toggle="dropdown"
+              ><i class="fa-solid fa-user fs-5"></i
+            ></a>
+            <ul class="dropdown-menu my-4 bg-dark">
+              <li class="dropdown-item">
+                <a href="" class="text-decoration-none text-danger"
+                  >Đăng nhập</a
+                >
+              </li>
+              <li class="dropdown-item">
+                <a href="dangkytk.html" class="text-decoration-none text-danger"
+                  >Đăng ký</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="" class="text-light px-4"
+              ><i class="fa-solid fa-heart text-danger fs-5"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a href="giohang(cart).html" class="text-light px-4 text-decoration-none"
+              ><i class="fa-solid fa-cart-shopping fs-5"></i>
+              <sup><small class="fs-5 text-warning" id="cart-Sl"></small></sup>
+              
+          </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--end head -->
+   
+    <nav id="menu" class="navbar navbar-expand-sm navbar-light bg-light d-lg-block d-md-none d-none">
+      <!--begin menu ngang-->
+      <div class="d-flex container justify-content-center">
+        <!--begin container1 -->
+        <ul class="navbar-nav d-flex align-items-center">
+          <li class="nav-item me-4 hidden-sm hidden-xs active">
+            <a class="nav-link active" aria-current="page" href="home.html"
+              >TRANG CHỦ</a
+            >
+          </li>
+          <li class="nav-item me-4 hidden-sm hidden-xs">
+            <a class="nav-link active" aria-current="page" href="gioithieu.html"
+              >GIỚI THIỆU</a
+            >
+          </li>
+          <a class="navbar-brand" href="home.html">
+            <img src="./img/logo.webp" alt="" />
+          </a>
+          <li class="nav-item dropdown hidden-sm hidden-xs">
+            <a class="text-decoration-none text-dark" href="sanpham.html"
+            >SẢN PHẨM <i class="fa-solid fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Rượu pha</a></li>
+              <li><a class="dropdown-item" href="#">Rượu ngoại</a></li>
+              <li><a class="dropdown-item" href="#">Rượu tri ân</a></li>
+              <li><a class="dropdown-item" href="#">Rượu vodka</a></li>
+              <li><a class="dropdown-item" href="#">Giỏ quà biếu</a></li>
+              <li><a class="dropdown-item" href="#">Rượu vang nhập khẩu</a></li>
+              <li><a class="dropdown-item" href="#">Hàng sắp về</a></li>
+              <li><a class="dropdown-item" href="#">Hàng mới về</a></li>
+              <li><a class="dropdown-item" href="#">Sản phẩm bán chạy</a></li>
+              <li><a class="dropdown-item" href="#">Sản phẩm ưu đãi </a></li>
+            </ul>
+          </li>
+          <li class="nav-item ms-4 hidden-sm hidden-xs">
+            <a class="nav-link active" aria-current="page" href="tintuc.html">TIN TỨC</a>
+          </li>
+        </ul>
+      </div>
+      <!--end container1-->
+    </nav>
+    <nav id="menu" class="navbar navbar-expand-sm navbar-light bg-light d-lg-none d-md-block">
+      <!--begin menu ngang mobe-->
+    
+      <div class="d-flex container justify-content-between">
+        <!--begin container1 -->
+       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav d-flex align-items-center">
+         
+         
+          <li class="nav-item me-4 hidden-sm hidden-xs active">
+            <a class="nav-link active" aria-current="page" href="home.html"
+              >TRANG CHỦ</a
+            >
+          </li>
+          <li class="nav-item me-4 hidden-sm hidden-xs">
+            <a class="nav-link active" aria-current="page" href="gioithieu.html"
+              >GIỚI THIỆU</a
+            >
+          </li>
+         
+          <li class="nav-item dropdown hidden-sm hidden-xs">
+            <a class="text-decoration-none text-dark" href="sanpham.html"
+            >SẢN PHẨM <i class="fa-solid fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Rượu pha</a></li>
+              <li><a class="dropdown-item" href="#">Rượu ngoại</a></li>
+              <li><a class="dropdown-item" href="#">Rượu tri ân</a></li>
+              <li><a class="dropdown-item" href="#">Rượu vodka</a></li>
+              <li><a class="dropdown-item" href="#">Giỏ quà biếu</a></li>
+              <li><a class="dropdown-item" href="#">Rượu vang nhập khẩu</a></li>
+              <li><a class="dropdown-item" href="#">Hàng sắp về</a></li>
+              <li><a class="dropdown-item" href="#">Hàng mới về</a></li>
+              <li><a class="dropdown-item" href="#">Sản phẩm bán chạy</a></li>
+              <li><a class="dropdown-item" href="#">Sản phẩm ưu đãi </a></li>
+            </ul>
+          </li>
+          <li class="nav-item ms-4 hidden-sm hidden-xs">
+            <a class="nav-link active" aria-current="page" href="tintuc.html">TIN TỨC</a>
+          </li>
+        </ul>
+        </div>
+        <a class="navbar-brand d-flex justify-content-center" href="home.html">
+          <img src="./img/logo.webp" alt="" />
+        </a>
+      </div>
+      <!--end container1-->
+    </nav>
+
+    <!--end menu ngang mobe-->
+    <!-- begin sản phẩm -->
+        <div class="container border-bottom">
+            <div class="col-xs-12 border-bottom">
+                <ul class="list-unstyled">
+                    <li><a class="text-decoration-none" href="home.html"> <span>Trang chủ</span></a> <span>|</span>
+                        <span>Tất cả sản phẩm</span></li>
+                </ul>
+            </div>
+            <div class="row ">
+                <div class="col-lg-2 border-end d-lg-block d-sm-none d-none d-md-none">
+                    <h2 class="fs-6 text-warning"><span>DANH MỤC</span></h2>
+                    <div class="">
+                    <nav class="navbar navbar-expand-lg border-bottom">
+                        <ul class="nav flex-column text-dark lh-1">
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Rượu pha <small class="text-danger">(9)</small></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Rượu ngoại <small class="text-danger">(8)</small></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Rượu tri ân <small class="text-danger">(20)</small></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Rượu vodka <small class="text-danger">(9)</small></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Giỏ quà biếu <small class="text-danger">(8)</small></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Nhập khẩu <small class="text-danger">(10)</small></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Hàng sắp về <small class="text-danger">(8)</small></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Hàng mới về <small class="text-danger">(10)</small></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Bán chạy
+                              <small class="text-danger" class="text-danger">(8)</small></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Ưu đãi <small class="text-danger">(8)</small></a
+                            >
+                          </li>
+                        </ul>
+                    </nav>
+                    <h2 class="fs-6 text-warning"><span>DANH MỤC</span></h2>
+                    <nav class="navbar navbar-expand-lg ">
+                        <ul class="nav flex-column text-dark lh-1">
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Rượu pha <small class="text-danger">(9)</small></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Rượu ngoại <small class="text-danger">(8)</small></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Rượu tri ân <small class="text-danger">(20)</small></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Rượu vodka <small class="text-danger">(9)</small></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Giỏ quà biếu <small class="text-danger">(8)</small></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Nhập khẩu <small class="text-danger">(10)</small></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Hàng sắp về <small class="text-danger">(8)</small></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Hàng mới về <small class="text-danger">(10)</small></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Bán chạy
+                              <small class="text-danger" class="text-danger">(8)</small></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                              >Ưu đãi <small class="text-danger">(8)</small></a
+                            >
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                </div>
+                
+                <div class="col-lg-10 border-end">
+                    <div class="border-bottom"><h2 class="fs-5 py-2 text-center">TẤT CẢ SẢN PHẨM</h2></div>
+                    <div class="row my-4 ">
+                        <div class=" product-item col-lg-5-fix  col-sm-4 col-md-4 position-relative my-4 img2">
+                            <a href=""
+                            ><img
+                              width="172"
+                              height="172"
+                              src="./img/sp-1.webp"
+                              
+                              alt=""
+                          /></a>
+                          
+                            <button class="btn btn-outline-warning btn-sm position-absolute top-50 start-50 translate-middle">Mua hàng</button>
+                          
+                          <div>
+                            <h3 class="fs-6 text-center fw-light">Rượu Wine Cheese</span></h3>
+                            <p class="fs-5 text-center text-warning">4000.000<sup>đ</sup></p>
+                          </div>
+                        </div>
+                        <div class="product-item col-lg-5-fix  col-sm-4 col-md-4 position-relative my-4 img2">
+                            <a href=""
+                            ><img
+                            width="172"
+                            height="172"
+                              src="./img/gioqua-1.webp"
+                              class="d-block"
+                              alt=""
+                          /></a>
+                          <button class="btn btn-outline-warning btn-sm position-absolute top-50 start-50 translate-middle">Mua hàng</button>
+                          <div>
+                            <h3 class="fs-6 text-center fw-light">Giỏ rượu Mariana</span></h3>
+                            <p class="fs-5 text-center text-warning">2356.000<sup>đ</sup></p>
+                          </div>
+                        </div>
+                        <div class="product-item col-lg-5-fix  col-sm-4 col-md-4 position-relative my-4 img2">
+                            <a href=""
+                            ><img
+                            width="172"
+                            height="172"
+                              src="./img/sp-19.webp"
+                              class="d-block"
+                              alt=""
+                          /></a>
+                          <button class="btn btn-outline-warning btn-sm position-absolute top-50 start-50 translate-middle">Mua hàng</button>
+                          <div>
+                            <h3 class="fs-6 text-center fw-light">Rượu Royal Salute 200</span></h3>
+                            <p class="fs-5 text-center text-warning">1200.000<sup>đ</sup></p>
+                          </div>
+                        </div>
+                        <div class="product-item col-lg-5-fix  col-sm-4 col-md-4 position-relative my-4 img2">
+                            <a href=""
+                            ><img
+                            width="172"
+                            height="172"
+                              src="./img/sp-7.webp"
+                              class="d-block"
+                              alt=""
+                          /></a>
+                          <button class="btn btn-outline-warning btn-sm position-absolute top-50 start-50 translate-middle">Mua hàng</button>
+                          <div>
+                            <h3 class="fs-6 text-center fw-light">Rượu CHIVAS</h3>
+                            <p class="fs-5 text-center text-warning">690.000<sup>đ</sup></p>
+                          </div>
+                        </div>
+                        <div class="product-item col-lg-5-fix  col-sm-4 col-md-4 position-relative my-4 img2">
+                            <a href=""
+                            ><img
+                            width="172"
+                            height="172"
+                              src="./img/sp-8.webp"
+                              class="d-block"
+                              alt=""
+                          /></a>
+                          <button class="btn btn-outline-warning btn-sm position-absolute top-50 start-50 translate-middle">Mua hàng</button>
+                          <div>
+                            <h3 class="fs-6 text-center fw-light">Rượu Revel </h3>
+                            <p class="fs-5 text-center text-warning">990.000<sup>đ</sup></p>
+                          </div>
+                        </div>
+                        <div class="product-item col-lg-5-fix  col-sm-4 col-md-4 position-relative my-4 img2">
+                            <a href=""
+                            ><img
+                            width="172"
+                            height="172"
+                              src="./img/sp-9.webp"
+                              class="d-block"
+                              alt=""
+                          /></a>
+                          <button class="btn btn-outline-warning btn-sm position-absolute top-50 start-50 translate-middle">Mua hàng</button>
+                          <div>
+                            <h3 class="fs-6 text-center fw-light">Rượu Merlot</h3>
+                            <p class="fs-5 text-center text-warning">790000<sup>đ</sup></p>
+                          </div>
+                        </div>
+                        <div class="product-item col-lg-5-fix  col-sm-4 col-md-4 position-relative my-4 img2">
+                            <a href=""
+                            ><img
+                            width="172"
+                            height="172"
+                              src="./img/sp-10.webp"
+                              class="d-block"
+                              alt=""
+                          /></a>
+                          <button class="btn btn-outline-warning btn-sm position-absolute top-50 start-50 translate-middle">Mua hàng</button>
+                          <div>
+                            <h3 class="fs-6 text-center fw-light">Rượu Rhum</h3>
+                            <p class="fs-5 text-center text-warning">3590.000<sup>đ</sup></p>
+                          </div>
+                        </div>
+                        <div class="product-item col-lg-5-fix  col-sm-4 col-md-4 position-relative my-4 img2">
+                            <a href=""
+                            ><img
+                            width="172"
+                            height="172"
+                              src="./img/sp-22.webp"
+                              class="d-block"
+                              alt=""
+                          /></a>
+                          <button class="btn btn-outline-warning btn-sm position-absolute top-50 start-50 translate-middle">Mua hàng</button>
+                          <div>
+                            <h3 class="fs-6 text-center fw-light">Rượu Royal Salute 100 Cask</h3>
+                            <p class="fs-5 text-center text-warning">1130.000<sup>đ</sup></p>
+                          </div>
+                        </div>
+                        <div class="product-item col-lg-5-fix  col-sm-4 col-md-4 position-relative my-4 img2">
+                            <a href=""
+                            ><img
+                            width="172"
+                            height="172"
+                              src="./img/sp-21.webp"
+                              class="d-block"
+                              alt=""
+                          /></a>
+                          <button class="btn btn-outline-warning btn-sm position-absolute top-50 start-50 translate-middle">Mua hàng</button>
+                          <div>
+                            <h3 class="fs-6 text-center fw-light">Rượu Mariana 2013</h3>
+                            <p class="fs-5 text-center text-warning">300.000<sup>đ</sup></p>
+                          </div>
+                        </div>
+                        <div class="product-item col-lg-5-fix  col-sm-4 col-md-4 position-relative my-4 img2">
+                            <a href=""
+                            ><img
+                            width="172"
+                            height="172"
+                              src="./img/sp-8.webp"
+                              class="d-block"
+                              alt=""
+                          /></a>
+                          <button class="btn btn-outline-warning btn-sm position-absolute top-50 start-50 translate-middle">Mua hàng</button>
+                          <div>
+                            <h3 class="fs-6 text-center fw-light">Rượu Revel </h3>
+                            <p class="fs-5 text-center text-warning">600.000<sup>đ</sup></p>
+                          </div>
+                        </div>
+                        <div class="product-item col-lg-5-fix  col-sm-4 col-md-4 position-relative my-4 img2">
+                            <a href=""
+                            ><img
+                            width="172"
+                            height="172"
+                              src="./img/sp-9.webp"
+                              class="d-block"
+                              alt=""
+                          /></a>
+                          <button class="btn btn-outline-warning btn-sm position-absolute top-50 start-50 translate-middle">Mua hàng</button>
+                          <div>
+                            <h3 class="fs-6 text-center fw-light">Rượu Merlot </h3>
+                            <p class="fs-5 text-center text-warning">1290.000<sup>đ</sup></p>
+                          </div>
+                        </div>
+                        <div class="product-item col-lg-5-fix  col-sm-4 col-md-4 position-relative my-4 img2">
+                            <a href=""
+                            ><img
+                            width="172"
+                            height="172"
+                              src="./img/gioqua-2.webp"
+                              class="d-block"
+                              alt=""
+                          /></a>
+                          <button class="btn btn-outline-warning btn-sm position-absolute top-50 start-50 translate-middle">Mua hàng</button>
+                          <div>
+                            <h3 class="fs-6 text-center fw-light">Giỏ Italian Wine Tasting</h3>
+                            <p class="fs-5 text-center text-warning">1000.000<sup>đ</sup></p>
+                          </div>
+                        </div>
+                        <div class="product-item col-lg-5-fix  col-sm-4 col-md-4 position-relative my-4 img2">
+                            <a href=""
+                            ><img
+                            width="172"
+                            height="172"
+                              src="./img/sp-20.webp"
+                              class="d-block"
+                              alt=""
+                          /></a>
+                          <button class="btn btn-outline-warning btn-sm position-absolute top-50 start-50 translate-middle">Mua hàng</button>
+                          <div>
+                            <h3 class="fs-6 text-center fw-light">Rượu Bubbles And Truffles </h3>
+                            <p class="fs-5 text-center text-warning">500.000<sup>đ</sup></p>
+                          </div>
+                        </div>
+                        <div class="product-item col-lg-5-fix  col-sm-4 col-md-4 position-relative my-4 img2">
+                            <a href=""
+                            ><img
+                            width="172"
+                            height="172"
+                              src="./img/gioqua-3.webp"
+                              class="d-block"
+                              alt=""
+                          /></a>
+                          <button class="btn btn-outline-warning btn-sm position-absolute top-50 start-50 translate-middle">Mua hàng</button>
+                          <div>
+                            <h3 class="fs-6 text-center fw-light">Giỏ Black Tie Affair</h3>
+                            <p class="fs-5 text-center text-warning">1400.000<sup>đ</sup></p>
+                          </div>
+                        </div>
+                        <div class="product-item col-lg-5-fix  col-sm-4 col-md-4 position-relative my-4 img2">
+                            <a href=""
+                            ><img
+                            width="172"
+                            height="172"
+                              src="./img/gioqua-4.webp"
+                              class="d-block"
+                              alt=""
+                          /></a>
+                          <button class="btn btn-outline-warning btn-sm position-absolute top-50 start-50 translate-middle">Mua hàng</button>
+                          <div>
+                            <h3 class="fs-6 text-center fw-light">Giỏ Wine and Cheese </h3>
+                            <p class="fs-5 text-center text-warning">4000.000<sup>đ</sup></p>
+                          </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="sanpham.html"><i class="fa-solid fa-angles-left"></i></a></li>
+                        <li class="page-item"><a class="page-link " href="sanpham.html">1</a></li>
+                        <li class="page-item"><a class="page-link bg-primary text-light" href="sanphamtrang2.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="sanphamtrang2.html"><i class="fa-solid fa-angles-right"></i></a></li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    <!--end sản phẩm  -->
+     <!-- begin cart -->
+<div class="cart container d-none">
+  <form action="">
+      <table>
+          <thead class="my-5 ">
+              <!-- <tr class="text-center border-bottom my-4">
+                  <th class=" py-4">Ảnh</th>
+                  <th class="px-5">Tên</th>
+                  <th class="">Giá</th>
+                  <th class="px-4">SL</th>
+                  <th class="">Chọn</th>
+              </tr> -->
+          </thead>
+          <tbody>
+             
+          </tbody>
+      </table>
+      <div class="price-total text-end py-3 me-5">
+        <p class="fw-bold"><span></span><sup></sup></p>
+      </div>
+  </form>
+</div>
+   <!-- end cart -->
+
+             <!-- begin footer -->
+             <div class="row">
+              <!-- begin 6 logo icon-->
+              <div class="col-lg-2 col-sm-2 d-none d-sm-none d-md-none d-lg-block">
+                <a href=""><img src="./img/7icon-1.webp" alt="" /></a>
+              </div>
+              <div class="col-lg-2 col-sm-2  d-none d-sm-none d-md-none d-lg-block">
+                <a href=""><img src="./img/7icon-2.webp" alt="" /></a>
+              </div>
+              <div class="col-lg-2 col-sm-2  ">
+                <a href=""><img src="./img/7icon-3.webp" alt="" /></a>
+              </div>
+              <div class="col-lg-2 col-sm-2  d-none d-sm-none d-md-none d-lg-block">
+                <a href=""><img src="./img/7icon-4.webp" alt="" /></a>
+              </div>
+              <div class="col-lg-2 col-sm-2 d-none d-sm-none d-md-none d-lg-block">
+                <a href=""><img src="./img/7icon-5.webp" alt="" /></a>
+              </div>
+              <div class="col-lg-2 col-sm-2 d-none d-sm-none d-md-none d-lg-block">
+                <a href=""><img src="./img/7icon-6.webp" alt="" /></a>
+              </div>
+            </div>
+            <!-- end 6 logo icon-->
+          </div>
+        </div>
+        <!--begin maps  -->
+        <div class="row bg-dark container-fluid">
+          <div class="col-lg-3 my-5">
+            <h3 class="text-light text-center fs-4">THÔNG TIN</h3>
+            <ul class="nav flex-column align-items-center">
+              <li class="nav-item">
+                <a class="nav-link text-light" href="home.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="gioithieu.html">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="sanpham.html">Sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="tintuc.html">Tin tức</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-5 my-5">
+            <a href=""
+              ><img
+                width="500"
+                height="300"
+                src="./img/maps.PNG"
+                class="d-block w-100"
+                alt=""
+            /></a>
+          </div>
+          <div class="col-lg-4 my-5">
+            <h3 class="text-center fs-4"><a href="">Winehouse.com.vn</a></h3>
+            <ul class="text-light fs-6 text-center">
+              <li class="list-unstyled">
+                <a href=""><i class="fa-solid fa-location-dot"></i></a> Địa chỉ: Mễ
+                Trì, Nam Từ Liêm, Hà Nội
+              </li>
+              <li class="list-unstyled">
+                <a href=""><i class="fa-solid fa-phone-volume"></i></a> Điện thoại:
+                096xxxxxx
+              </li>
+              <li class="list-unstyled">
+                <a href=""><i class="fa-solid fa-envelope"></i> </a>Email:
+                <a href="">Winehouse.com.vn</a>
+              </li>
+            </ul>
+            <h3 class="text-center text-light fs-6">CHIA SẺ MẠNG XÃ HỘI</h3>
+            <ul class="text-center text-light fs-6">
+              <li class="list-unstyled">
+                <a href=""><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+              </li>
+              <li class="list-unstyled">
+                <a href=""><i class="fa-brands fa-google-plus"></i> Google+</a>
+              </li>
+              <li class="list-unstyled">
+                <a href=""><i class="fa-brands fa-youtube"></i> Youtobe</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end maps -->
+        <div class="row py-4 bg-light">
+          <div class="col-lg-6 text-center text-dark fs-5">
+            Bản quyền thuộc về Mint
+          </div>
+          <div class="col-lg-6 text-center fs-5">
+            <img src="./img/payment.webp" alt="" />
+          </div>
+        </div>
+        <!-- end footer -->
+    
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"
+        ></script>
+        <script src="./js/cart.js"></script>
+      </body>
+    </html>
+    

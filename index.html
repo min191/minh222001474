@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web của Minh</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/animation.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/Iframe.css">
+</head>
+<body>
+  <body>
+
+    <header class="header">
+      <ul class="header-nav">
+        <a href="#">
+          <img src="images/logoM.png" class="logo" alt="Logo">
+        </a>
+        <li class="nav-link ">
+          <a class="actives" href="index.html">HOME</a>
+        </li>
+        <li class="nav-link ">
+          <a href="about.html">ABOUT</a>
+        </li>
+        <li class="nav-link ">
+          <a href="project.html">PROJECT</a>
+        </li>
+        <li class="nav-link ">
+          <a href="contact.html">CONTACT</a>
+        </li>
+        <div class="container-search">
+          <input checked="" class="checkbox" type="checkbox">
+          <div class="mainbox">
+            <div class="iconContainer">
+              <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon">
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                </path>
+              </svg>
+            </div>
+            <input class="search_input" placeholder="search..." type="text">
+          </div>
+        </div>
+      </ul>
+      <!-- mobi -->
+      <div class="open-menu" onclick="myD()" style="width: 20px;">
+        <a><i class="menumobi fa-solid fa-bars" style="cursor: pointer; font-size: 30px;"></i></a>
+      </div>
+      <div class="menumobi-box" id="menumobi">
+  
+        <div class="close-menu" onclick="myX()">
+          <i class="fa fa-times" aria-hidden="true" style="color: black; font-size: 30px; cursor: pointer;"></i>
+  
+          <nav class="menumobi">
+            <a href="index.html">HOME</a>
+  
+            <a href="about.html">ABOUT</a>
+  
+            <a href="project.html">PROJECT</a>
+  
+            <a href="contact.html">CONTACT</a>
+  
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div id="animation_text" class="hello">
+        <h1>Hello, I am <span>Quang Minh.</span></h1>
+        <p>
+          This is my personal website; I hope you will enjoy it!
+        </p>
+        <p>
+          CNTT D2022-222001474
+        </p>
+      </div>
+      <div id="animation_img" class="images">
+        <img src="images/shape1.png" class="shape" alt="Shape">
+        <img src="images/my_avatar.png" class="me" alt="Avatar">
+      </div>
+    </section>
+  
+    <div class="container-cv">
+      <div class="sidebar">
+        <h1>Nguyễn Quang Minh</h1>
+        <h3>Coder</h3>
+        <figure class="profile-img">
+          <img src="./images/bat.jpg" alt="profile" />
+        </figure>
+  
+        <ul class="sidebar-information">
+          <li>
+            <div class="icon"></div>
+          </li>
+          <li>Name: Nguyễn Quang Minh</li>
+          <li>Country: Bắc Ninh</li>
+          <li>Birthday: 19 jan 2004</li>
+          <li>Email: minhne1904@gmail.com</li>
+        </ul>
+      </div>
+      <div class="right-container">
+  
+  
+  
+        <div class="content-profile">
+          <div class="about-me-container">
+            <div class="title">
+              <h3>About Me</h3>
+              <div id="line_title"></div>
+            </div>
+            <h5>I am Quang Minh.</h5>
+            <p>I'm a K22 student with a major in information technology at Hanoi Capital University. As a person, I lean
+              towards the quieter side and prefer not to overtly display my emotions. Describing myself as an introvert, I
+              am someone who always considers the well-being of those around me. When it comes to my academic pursuits, I
+              am known for being active in exploring and learning from my peers. Engaging in school activities is a
+              significant part of my routine, as I believe these experiences play a crucial role in shaping my character
+              and skills. Looking ahead, I am determined to achieve a lot in my future endeavors, especially in the
+              professional path that I am working towards.
+            </p>
+            <a class="read-more" href="about.html">
+              <b>Read more...</b>
+            </a>
+          </div>
+  
+        </div>
+        <div class="content-profile">
+          <div style="display: flex;justify-content: space-between; padding: 10px;">
+            <div class="title">
+              <h3>My preference</h3>
+              <div id="line_title"></div>
+            </div>
+            <div class="btn-preference">
+  
+              <a>
+                <img id="prevBtn" src="./images/trái.png" onclick="prevSlide()" alt="">
+              </a>
+  
+              <a>
+                <img id="nextBtn" src="./images/phải.png" onclick="nextSlide()" alt="">
+              </a>
+            </div>
+          </div>
+  
+          <div class="my-service-content" id="carousel-container">
+            <div class="my-service-item">
+              <img src="./images/mint4.jpg">
+              <h3>I like playing billiard</h3>
+              <p>When I play billiards, I feel very happy.</p>
+            </div>
+            <div class="my-service-item">
+              <img src="./images/mint3.jpg">
+              <h3>Listening to music</h3>
+              <p>I like listening to music when I feel stressed, it helps me relax and feel better.</p>
+            </div>
+            <div class="my-service-item">
+              <img src="./images/cat.jpg">
+              <h3>i love Cat</h3>
+              <p>I love my son. He name Tom.</p>
+            </div>
+            <div class="my-service-item">
+              <img src="./images/gt.jpg">
+              <h3>Playing guitar</h3>
+              <p>Every time I play the guitar, I feel comfortable.</p>
+            </div>
+            <div class="my-service-item">
+              <img src="./images/fr.jpg">
+              <h3>Hangout with friends</h3>
+              <p>I want go out with my friend </p>
+            </div>
+            <div class="my-service-item">
+              <img src="./images/quang.jpg">
+              <h3>Play soccer</h3>
+              <p>I have been playing football since I was little, this is my passion.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="content-profile">
+          <div class="skill-tyle">
+            <div class="title">
+              <h3>Code Skills</h3>
+              <div id="line_title"></div>
+            </div>
+            <h4 class="skill-title">HTML & CSS</h4>
+            <div class="skill-progess">
+              <div class="html"></div>
+            </div>
+            <h4 class="skill-title">C, C++, C#</h4>
+            <div class="skill-progess">
+              <div class="C"></div>
+            </div>
+            <h4 class="skill-title">Javascript</h4>
+            <div class="skill-progess">
+              <div class="javas"></div>
+            </div>
+            <h4 class="skill-title">Java</h4>
+            <div class="skill-progess">
+              <div class="java"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <footer class="footer">
+      <h2 id="item3">Contact</h2>
+  
+      <div class="parent">
+  
+        <div class="child child-1">
+          <button class="button btn-1">
+            <a href="https://www.facebook.com/ngm.0119" target="_blank">
+              <img src="images/FB2.png" style="width: 55%">
+            </a>
+          </button>
+        </div>
+  
+        <div class="child child-2">
+          <button class="button btn-2">
+            <a href="https://www.instagram.com/ngw.mag/" target="_blank">
+              <img src="images/insta.png" style="width: 110%">
+            </a>
+          </button>
+        </div>
+  
+        <div class="child child-3">
+          <button class="button btn-3">
+            <a href="https://github.com/min191/minh222001474" target="_blank">
+              <img src="images/GitHub1.png" style="width: 100%">
+            </a>
+          </button>
+        </div>
+  
+        <div class="child child-4">
+          <button class="button btn-4">
+            <a href="#" target="_blank">
+              <img src="images/ttw.png" style="width: 110%">
+            </a>
+          </button>
+        </div>
+      </div>
+    </footer>
+    <button class="box-hidden show_login">
+      <i class="fa-regular fa-user"></i>
+    </button>
+    <script src="https://kit.fontawesome.com/7dc508f75f.js" crossorigin="anonymous"></script>
+    <script src="./js/iframe.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/show&hiden_menumobi.js"></script>
+  </body>
+</body>
+</html>

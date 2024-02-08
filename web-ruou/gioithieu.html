@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="all.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css" />
+    <link rel="stylesheet" href="./css/home-page.css" />
+  </head>
+  <body onload="loadSlsp()">
+    <div class="row container-fluid bg-dark">
+      <!--begin head -->
+
+      <div class="col-sm-6 col-lg-7 d-none d-sm-none d-md-none d-lg-block">
+        <h4 class="text-center text-light fs-6 fw-light lh-1">
+          <span
+            ><i
+              class="fa-solid fa-triangle-exclamation fs-3 text-warning mt-2"
+            ></i
+          ></span>
+          <p class="my-1">
+            Sản phẩm này Không dành cho người dưới 18 tuổi và phụ nữ đang mang
+            thai.
+          </p>
+          <p>Sống có trách nhiệm và Không lái xe khi đã sử dụng rượu bia.</p>
+        </h4>
+      </div>
+
+      <div
+        class="col-sm-6 col-lg-5 align-items-center d-md-flex"
+      >
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="" class="text-light px-4" data-bs-toggle="dropdown"
+              ><i class="fa-solid fa-magnifying-glass fs-5"></i
+            ></a>
+            <ul class="dropdown-menu my-4 bg-dark">
+              <li class="dropdown-item">
+                <input
+                  class="input-group"
+                  type="text"
+                  class="form-control"
+                  placeholder="Search"
+                />
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="" class="text-light px-4" data-bs-toggle="dropdown"
+              ><i class="fa-solid fa-user fs-5"></i
+            ></a>
+            <ul class="dropdown-menu my-4 bg-dark">
+              <li class="dropdown-item">
+                <a href="" class="text-decoration-none text-danger"
+                  >Đăng nhập</a
+                >
+              </li>
+              <li class="dropdown-item">
+                <a href="dangkytk.html" class="text-decoration-none text-danger"
+                  >Đăng ký</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="" class="text-light px-4"
+              ><i class="fa-solid fa-heart text-danger fs-5"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a href="giohang(cart).html" class="text-light px-4 text-decoration-none"
+              ><i class="fa-solid fa-cart-shopping fs-5"></i>
+              <sup><small class="fs-5 text-warning" id="cart-Sl"></small></sup>
+              
+          </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--end head -->
+   
+    <nav id="menu" class="navbar navbar-expand-sm navbar-light bg-light d-lg-block d-md-none d-none">
+      <!--begin menu ngang-->
+      <div class="d-flex container justify-content-center">
+        <!--begin container1 -->
+        <ul class="navbar-nav d-flex align-items-center">
+          <li class="nav-item me-4 hidden-sm hidden-xs active">
+            <a class="nav-link active" aria-current="page" href="home.html"
+              >TRANG CHỦ</a
+            >
+          </li>
+          <li class="nav-item me-4 hidden-sm hidden-xs">
+            <a class="nav-link active" aria-current="page" href="gioithieu.html"
+              >GIỚI THIỆU</a
+            >
+          </li>
+          <a class="navbar-brand" href="home.html">
+            <img src="./img/logo.webp" alt="" />
+          </a>
+          <li class="nav-item dropdown hidden-sm hidden-xs">
+            <a class="text-decoration-none text-dark" href="sanpham.html"
+            >SẢN PHẨM <i class="fa-solid fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Rượu pha</a></li>
+              <li><a class="dropdown-item" href="#">Rượu ngoại</a></li>
+              <li><a class="dropdown-item" href="#">Rượu tri ân</a></li>
+              <li><a class="dropdown-item" href="#">Rượu vodka</a></li>
+              <li><a class="dropdown-item" href="#">Giỏ quà biếu</a></li>
+              <li><a class="dropdown-item" href="#">Rượu vang nhập khẩu</a></li>
+              <li><a class="dropdown-item" href="#">Hàng sắp về</a></li>
+              <li><a class="dropdown-item" href="#">Hàng mới về</a></li>
+              <li><a class="dropdown-item" href="#">Sản phẩm bán chạy</a></li>
+              <li><a class="dropdown-item" href="#">Sản phẩm ưu đãi </a></li>
+            </ul>
+          </li>
+          <li class="nav-item ms-4 hidden-sm hidden-xs">
+            <a class="nav-link active" aria-current="page" href="tintuc.html">TIN TỨC</a>
+          </li>
+        </ul>
+      </div>
+      <!--end container1-->
+    </nav>
+    <nav id="menu" class="navbar navbar-expand-sm navbar-light bg-light d-lg-none d-md-block">
+      <!--begin menu ngang mobe-->
+    
+      <div class="d-flex container justify-content-between">
+        <!--begin container1 -->
+       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav d-flex align-items-center">
+         
+         
+          <li class="nav-item me-4 hidden-sm hidden-xs active">
+            <a class="nav-link active" aria-current="page" href="home.html"
+              >TRANG CHỦ</a
+            >
+          </li>
+          <li class="nav-item me-4 hidden-sm hidden-xs">
+            <a class="nav-link active" aria-current="page" href="gioithieu.html"
+              >GIỚI THIỆU</a
+            >
+          </li>
+         
+          <li class="nav-item dropdown hidden-sm hidden-xs">
+            <a class="text-decoration-none text-dark" href="sanpham.html"
+            >SẢN PHẨM <i class="fa-solid fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Rượu pha</a></li>
+              <li><a class="dropdown-item" href="#">Rượu ngoại</a></li>
+              <li><a class="dropdown-item" href="#">Rượu tri ân</a></li>
+              <li><a class="dropdown-item" href="#">Rượu vodka</a></li>
+              <li><a class="dropdown-item" href="#">Giỏ quà biếu</a></li>
+              <li><a class="dropdown-item" href="#">Rượu vang nhập khẩu</a></li>
+              <li><a class="dropdown-item" href="#">Hàng sắp về</a></li>
+              <li><a class="dropdown-item" href="#">Hàng mới về</a></li>
+              <li><a class="dropdown-item" href="#">Sản phẩm bán chạy</a></li>
+              <li><a class="dropdown-item" href="#">Sản phẩm ưu đãi </a></li>
+            </ul>
+          </li>
+          <li class="nav-item ms-4 hidden-sm hidden-xs">
+            <a class="nav-link active" aria-current="page" href="tintuc.html">TIN TỨC</a>
+          </li>
+        </ul>
+        </div>
+        <a class="navbar-brand d-flex justify-content-center" href="home.html">
+          <img src="./img/logo.webp" alt="" />
+        </a>
+      </div>
+      <!--end container1-->
+    </nav>
+
+    <!--end menu ngang mobe-->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 ">
+                    <ul class="list-unstyled">
+                        <li ><a class="text-decoration-none" href="home.html"> <span>Trang chủ</span></a> <span>|</span> <span>Giới thiệu</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 coborder-bottom">
+                    <div>
+                        <h1 class="fs-3 fw-bold"><a class="text-decoration-none text-dark" href="">GIỚI THIỆU</a></h1>
+                    </div>
+                    <div>
+                        <p>“Rượu” – không đơn thuần là một loại thức uống thông thường mà có thể nói rượu là thực thể có hồn. Vậy làm thế nào để cho người uống hiểu hết được cái hồn của Rượu,
+                             “Winehourse” ra đời với mong muốn cung cấp cho Quý khách những dòng rượu hảo hạng,mới lạ…</p>
+                        <p class="text-center"><img src="./img/img-gioithieu.webp" width="500" height="500" alt=""></p>
+                        <p>Rượu bị ảnh hưởng bởi lịch sử, văn hoá, địa lý, nhân chủng học,…vì vậy lượng kiến thức về rượu thật rộng lớn. Do đó, “Winehourse” không chỉ đơn thuần là một Website bán hàng trực tuyến trong lĩnh vực rượu, “Winehourse” còn mong muốn góp phần tập hợp, hệ thống các kiến thức về văn hóa, lịch sử, địa lý... cho đến cách thức lựa chọn, bảo quản, thưởng thức...
+                             các dòng rượu khác nhau trên thế giới để những người say mê hoặc muốn tìm hiểu về “văn hóa rượu”có thể cùng chia sẻ, nâng cao tầm hiểu biết.</p>
+                        <p>Ngày nay với thủ thuật làm giả tinh vi, những người làm rượu giả có thể cho ra đời những chai rượu giả khó có thể phát hiện. Vì vậy tình hình rượu ngoại trên thị trường thật phức tạp, khách hàng muốn mua một chai rượu ngon để thưởng thức hoặc làm quà biếu thì cũng rất lúng túng.
+                            Một vấn đề khó khăn nữa là những chai rượu khi không được bảo quản tốt: như trưng bày quá lâu, nơi cất giữ nóng, ẩm, ánh sáng quá cao… làm cho những chai rượu bị biến đổi về phẩm chất, hoặc sinh ra những chất độc hại.</p>
+                        <p>Khi mua hàng tại siêu thị rượu ngoại online của chúng tôi, quý khách sẽ được khám phá một thế giới phong phú về rượu, từ các loại rượu ngoại như:
+                             rượu mạnh Châu Âu, rượu vang, …đến các loại rượu trong nước. Chúng tôi cung cấp những chai rượu được nhập chính ngạch và từ chính hãng, mỗi chai rượu được chúng tôi cung cấp phải luôn có xuất xứ rõ ràng, đảm bảo chất lượng và luôn được bảo quản tốt để có thể đáp ứng về nhu cầu của quý khách một cách tốt nhất.</p>
+                        <p>Chúng tôi chuyên phân phối sỹ và lẻ các sản phẩm rượu ngoại. Nếu Quý khách hàng mua rượu giá sỹ vui lòng liên hệ để có giá tốt nhất.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+   <!-- begin footer -->
+   <div class="row">
+    <!-- begin 6 logo icon-->
+    <div class="col-lg-2 col-sm-2 d-none d-sm-none d-md-none d-lg-block">
+      <a href=""><img src="./img/7icon-1.webp" alt="" /></a>
+    </div>
+    <div class="col-lg-2 col-sm-2  d-none d-sm-none d-md-none d-lg-block">
+      <a href=""><img src="./img/7icon-2.webp" alt="" /></a>
+    </div>
+    <div class="col-lg-2 col-sm-2  ">
+      <a href=""><img src="./img/7icon-3.webp" alt="" /></a>
+    </div>
+    <div class="col-lg-2 col-sm-2  d-none d-sm-none d-md-none d-lg-block">
+      <a href=""><img src="./img/7icon-4.webp" alt="" /></a>
+    </div>
+    <div class="col-lg-2 col-sm-2 d-none d-sm-none d-md-none d-lg-block">
+      <a href=""><img src="./img/7icon-5.webp" alt="" /></a>
+    </div>
+    <div class="col-lg-2 col-sm-2 d-none d-sm-none d-md-none d-lg-block">
+      <a href=""><img src="./img/7icon-6.webp" alt="" /></a>
+    </div>
+  </div>
+  <!-- end 6 logo icon-->
+</div>
+</div>
+<!--begin maps  -->
+<div class="row bg-dark container-fluid">
+<div class="col-lg-3 my-5">
+  <h3 class="text-light text-center fs-4">THÔNG TIN</h3>
+  <ul class="nav flex-column align-items-center">
+    <li class="nav-item">
+      <a class="nav-link text-light" href="home.html">Trang chủ</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="gioithieu.html">Giới thiệu</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="sanpham.html">Sản phẩm</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="tintuc.html">Tin tức</a>
+    </li>
+  </ul>
+</div>
+<div class="col-lg-5 my-5">
+  <a href=""
+    ><img
+      width="500"
+      height="300"
+      src="./img/maps.PNG"
+      class="d-block w-100"
+      alt=""
+  /></a>
+</div>
+<div class="col-lg-4 my-5">
+  <h3 class="text-center fs-4"><a href="">Winehouse.com.vn</a></h3>
+  <ul class="text-light fs-6 text-center">
+    <li class="list-unstyled">
+      <a href=""><i class="fa-solid fa-location-dot"></i></a> Địa chỉ: Mễ
+      Trì, Nam Từ Liêm, Hà Nội
+    </li>
+    <li class="list-unstyled">
+      <a href=""><i class="fa-solid fa-phone-volume"></i></a> Điện thoại:
+      096xxxxxx
+    </li>
+    <li class="list-unstyled">
+      <a href=""><i class="fa-solid fa-envelope"></i> </a>Email:
+      <a href="">Winehouse.com.vn</a>
+    </li>
+  </ul>
+  <h3 class="text-center text-light fs-6">CHIA SẺ MẠNG XÃ HỘI</h3>
+  <ul class="text-center text-light fs-6">
+    <li class="list-unstyled">
+      <a href=""><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+    </li>
+    <li class="list-unstyled">
+      <a href=""><i class="fa-brands fa-google-plus"></i> Google+</a>
+    </li>
+    <li class="list-unstyled">
+      <a href=""><i class="fa-brands fa-youtube"></i> Youtobe</a>
+    </li>
+  </ul>
+</div>
+</div>
+<!-- end maps -->
+<div class="row py-4 bg-light">
+<div class="col-lg-6 text-center text-dark fs-5">
+  Bản quyền thuộc về Mint
+</div>
+<div class="col-lg-6 text-center fs-5">
+  <img src="./img/payment.webp" alt="" />
+</div>
+</div>
+<!-- end footer -->
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"
+></script>
+<script src="./js/cart.js"></script>
+</body>
+</html>
